@@ -1,0 +1,520 @@
+<title>LxthalFC Pack System</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#f2f3f0; --card:#fbfbfa; --sunk:#e9ebe6; --line:#d3d7cd;
+  --ink:#14181b; --ink2:#4a5350; --ink3:#78827e;
+  --acc:#0f6b52; --acc-soft:#dfece7;
+  --gate:#8a6210; --gate-soft:#f6ecd6;
+  --sig:#a63d1e; --sig-soft:#f7e4dd;
+  --shadow:0 1px 2px rgba(20,24,27,.05),0 10px 28px rgba(20,24,27,.05);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0d1113; --card:#151a1c; --sunk:#1b2124; --line:#2a3235;
+  --ink:#e6eae8; --ink2:#a2aeaa; --ink3:#7a8683;
+  --acc:#4fbd97; --acc-soft:#10281f;
+  --gate:#dfa93f; --gate-soft:#2e2412;
+  --sig:#e0806a; --sig-soft:#2f1a14;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+}}
+:root[data-theme="dark"]{
+  --paper:#0d1113; --card:#151a1c; --sunk:#1b2124; --line:#2a3235;
+  --ink:#e6eae8; --ink2:#a2aeaa; --ink3:#7a8683;
+  --acc:#4fbd97; --acc-soft:#10281f;
+  --gate:#dfa93f; --gate-soft:#2e2412;
+  --sig:#e0806a; --sig-soft:#2f1a14;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif; font-size:16.5px; line-height:1.6;
+  margin:0; padding-block:0 72px; padding-left:16px; padding-right:16px;
+}
+.wrap{max-width:820px;margin:0 auto}
+
+/* masthead */
+header.mast{padding-block:40px 20px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--acc); margin-bottom:10px;
+}
+h1{
+  font-family:Archivo,system-ui,sans-serif; font-weight:700; font-size:clamp(34px,7vw,50px);
+  line-height:1.02; letter-spacing:-.022em; margin:0 0 12px; text-wrap:balance;
+}
+.standfirst{font-size:18px;color:var(--ink2);margin:0;max-width:60ch}
+
+/* laws */
+.laws{display:grid;gap:12px;margin:26px 0 8px}
+.law{
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--acc);
+  border-radius:8px;padding:14px 16px;box-shadow:var(--shadow);
+}
+.law b{font-family:Archivo,sans-serif;font-weight:600;display:block;font-size:15px;margin-bottom:3px}
+.law span{color:var(--ink2);font-size:15px}
+
+/* stage nav */
+nav.jump{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:5;
+  background:var(--paper); border-bottom:1px solid var(--line);
+  padding-block:10px; margin-bottom:8px;
+  display:flex; gap:6px; overflow-x:auto; scrollbar-width:thin;
+}
+nav.jump a{
+  font-family:"JetBrains Mono",monospace; font-size:11.5px; text-decoration:none;
+  color:var(--ink2); background:var(--sunk); border:1px solid var(--line);
+  border-radius:5px; padding:4px 9px; white-space:nowrap; flex:none;
+}
+nav.jump a:hover{color:var(--ink);border-color:var(--acc)}
+nav.jump a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+
+/* stages */
+section.stage{padding-block:26px;border-top:1px solid var(--line)}
+.shead{display:flex;gap:16px;align-items:baseline;margin-bottom:6px}
+.snum{
+  font-family:Archivo,sans-serif;font-weight:700;font-size:30px;line-height:1;
+  color:var(--acc);font-variant-numeric:tabular-nums;flex:none;min-width:52px;
+  letter-spacing:-.03em;
+}
+.stage h2{
+  font-family:Archivo,sans-serif;font-weight:600;font-size:23px;line-height:1.15;
+  margin:0;letter-spacing:-.012em;text-wrap:balance;
+}
+.purpose{color:var(--ink2);margin:0 0 14px;padding-left:68px}
+@media(max-width:560px){.purpose{padding-left:0}.snum{font-size:24px;min-width:42px}}
+
+.stage h3{
+  font-family:Archivo,sans-serif;font-weight:600;font-size:13px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--ink3);margin:18px 0 7px;
+}
+.stage p{margin:0 0 11px}
+.stage ul{margin:0 0 11px;padding-left:20px}
+.stage li{margin-bottom:6px}
+.stage li::marker{color:var(--acc)}
+
+code{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.85em;
+  background:var(--sunk);border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+}
+.calls{
+  background:var(--sunk);border:1px solid var(--line);border-radius:8px;
+  padding:12px 14px;margin:0 0 12px;
+  font-family:"JetBrains Mono",monospace;font-size:12.5px;line-height:1.7;
+  overflow-x:auto;
+}
+.calls div{white-space:nowrap}
+.calls .c{color:var(--acc);font-weight:500}
+
+.gate,.fail{border-radius:8px;padding:11px 14px;margin:12px 0;font-size:15px}
+.gate{background:var(--gate-soft);color:var(--gate);border:1px solid currentColor}
+.fail{background:var(--sig-soft);color:var(--sig);border:1px solid currentColor}
+.gate b,.fail b{font-family:Archivo,sans-serif;font-weight:600;letter-spacing:.04em;font-size:12px;text-transform:uppercase;display:block;margin-bottom:3px}
+.gate a,.fail a{color:inherit;font-weight:600}
+
+.vocab{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 12px}
+.vocab span{
+  font-family:"JetBrains Mono",monospace;font-size:11.5px;
+  background:var(--card);border:1px solid var(--line);border-radius:4px;padding:3px 7px;color:var(--ink2);
+}
+.vocab span.key{border-color:var(--acc);color:var(--acc)}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:0 0 12px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:Archivo,sans-serif;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+td code{font-size:12.5px}
+.tw{overflow-x:auto}
+
+/* error log */
+.err{border-top:1px solid var(--line);padding-block:14px}
+.err:first-of-type{border-top:0}
+.ehead{display:flex;gap:11px;align-items:baseline;flex-wrap:wrap}
+.eid{
+  font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--sig);
+  border:1px solid var(--sig);border-radius:4px;padding:2px 6px;flex:none;
+}
+.err h3{font-family:Archivo,sans-serif;font-weight:600;font-size:16px;margin:0;flex:1;min-width:0;letter-spacing:-.005em;text-transform:none;color:var(--ink);letter-spacing:0}
+.estage{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink3)}
+.err dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:15px}
+.err dt{font-family:Archivo,sans-serif;font-weight:600;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);padding-top:4px}
+.err dd{margin:0;color:var(--ink2)}
+.err dd.rule{color:var(--ink);font-weight:600}
+@media(max-width:560px){.err dl{grid-template-columns:1fr;gap:1px}.err dt{padding-top:7px}}
+
+.patterns{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;box-shadow:var(--shadow);margin-top:20px}
+.patterns ol{margin:8px 0 0;padding-left:20px}
+.patterns li{margin-bottom:7px;color:var(--ink2)}
+.patterns li::marker{color:var(--sig);font-weight:600}
+
+.runit{
+  background:var(--ink);color:var(--paper);border-radius:10px;padding:18px 20px;margin-top:28px;
+  font-family:"JetBrains Mono",monospace;font-size:13px;line-height:1.75;
+}
+.runit b{display:block;font-family:Archivo,sans-serif;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;opacity:.65;margin-bottom:8px;font-weight:600}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="eyebrow">Operating system · v1.1 · 22 Sep 2026 · E17–E24 folded in</div>
+  <h1>LxthalFC Pack System</h1>
+  <p class="standfirst">Twelve stages from a blank slate to a shoot-ready pack, every one naming the
+  exact call to make. Built from one seventeen-pack batch and the twenty-four errors it produced.</p>
+</header>
+
+<div class="laws">
+  <div class="law"><b>1 · Decide by default</b><span>Escalate only a genuine fork — options genuinely close, and the choice taste rather than evidence. Everything else you decide, state the reasoning, and name the cost so it can be overruled in one tap. Flagging feels safe and is not: it moves the work to him.</span></div>
+  <div class="law"><b>2 · Text wins on what happened. Footage wins on what is in the frame. Joel wins on how it looked.</b><span>Outcomes, dates, competitions, awards, rulings and the type of restart go to the written record before they are written down. Foot, kit, boards, angles and commentary come from the watch. Technique and whether it reads on camera are his.</span></div>
+  <div class="law"><b>3 · Validate in the same kind as the output</b><span>A parse check is not a render check. A render check is not a click-through. If the output is a page, open it. If it is a PDF, render a page to an image and read it back.</span></div>
+</div>
+
+<nav class="jump" aria-label="Jump to stage">
+  <a href="#s0">0 · Load state</a><a href="#s1">1 · Entry</a><a href="#s2">2 · Audit</a>
+  <a href="#s25">2.5 · Route</a><a href="#s3">3 · Source</a><a href="#s4">4 · Watch</a>
+  <a href="#s5">5 · Verify</a><a href="#s6">6 · Tie-break</a><a href="#s7">7 · Assemble</a>
+  <a href="#s8">8 · Decide</a><a href="#s9">9 · Deliver</a><a href="#s95">9.5 · QA gate</a><a href="#s10">10 · Self-audit</a>
+  <a href="#log">Error log</a>
+</nav>
+
+<section class="stage" id="s0">
+  <div class="shead"><div class="snum">00</div><h2>Load state</h2></div>
+  <p class="purpose">Always first, never skipped.</p>
+  <div class="calls">
+    <div><span class="c">get_channel_shorts</span>(channel_id) — refresh own.json, 459 entries</div>
+    <div>read errors.md · queued.csv · rejected.json · dedup_base.json</div>
+    <div>read the notes app db — collections <span class="c">notes/</span> and <span class="c">decisions/</span></div>
+  </div>
+  <p>Read <b>every entry</b> in the error log before doing anything else. Most of what follows exists because of one of them. Act on anything in <code>decisions/</code> answered since the last run.</p>
+  <div class="gate"><b>Gate 0</b>You cannot proceed until the log is read and <code>own.json</code> is refreshed. <a href="#E01">E01</a> and <a href="#E02">E02</a> both happened because a catalogue check was skipped.</div>
+</section>
+
+<section class="stage" id="s1">
+  <div class="shead"><div class="snum">01</div><h2>Entry point</h2></div>
+  <p class="purpose">Two ways in. The system says which stages to skip.</p>
+  <h3>1A — from nothing</h3>
+  <div class="calls">
+    <div><span class="c">search_viral_videos</span>(search=&lt;hook phrase&gt;, content_type="shorts") — several phrasings at once</div>
+    <div><span class="c">get_youtube_video_data</span>(url, include_comments=true, max_comments=100) — every card kept</div>
+    <div><span class="c">fetch_transcript</span>(ids) — batches up to 20 per call</div>
+  </div>
+  <p>FootyRanks and SantaBall catalogues first, then his own winners. Algrow search omits comment counts, so fetch them separately. Score with <code>score_engine.py</code>; prefer Algrow's real channel-relative <code>outlier_score</code> over the computed index.</p>
+  <h3>1B — from picks in hand</h3>
+  <p>Append <code>Title\nURL</code> pairs to <code>queued.csv</code> with today's date, push every non-picked title from that board to <code>rejected.json</code>, and go to Stage 2.</p>
+  <div class="gate"><b>Gate 1</b>Discovery search runs before any shortlist, every video, no exceptions. Dedup at concept level against dedup_base ∪ rejected ∪ queued ∪ own. Count his existing versions — Die for the Badge had six; a seventh is a bad bet regardless of score.</div>
+</section>
+
+<section class="stage" id="s2">
+  <div class="shead"><div class="snum">02</div><h2>Reference audit</h2></div>
+  <p class="purpose">Eight checks, every one cheap, every one having caught a real failure.</p>
+  <div class="calls">
+    <div><span class="c">start_video_analysis</span>(url, media_resolution="default", prompt=&lt;audit&gt;) — 4+ in parallel</div>
+    <div><span class="c">get_video_analysis_result</span>(job_id)</div>
+  </div>
+  <ol>
+    <li><b>Rank-label overlap.</b> Is the pick's wording in the reference's own captions? Then it was transcribed, not chosen. A reference is a <i>format</i> source, never a <i>content</i> source.</li>
+    <li><b>Structure.</b> Ranked countdown / single story / bracket / head-to-head / compilation. A pack inherits it or declares it is departing.</li>
+    <li><b>Genre gate.</b> Gameplay sim is an automatic reject. This one check would have caught three failures in a single batch.</li>
+    <li><b>Title-promise match.</b> Does it ask the <i>same</i> question? And any link appearing against more than one queued idea is unverified for all of them — one sat against seven.</li>
+    <li><b>Lane proof is not format proof.</b> A big video in the right lane proves the lane, not the title.</li>
+    <li><b>Visible-game-UI standard.</b> See Stage 4.</li>
+    <li><b>Parent-number check.</b> List the parent's entries by name <i>and</i> moment. Same player different moment is fine; same moment is a re-cut.</li>
+    <li><b>Title promise on each pick, no placeholders.</b> A striker under a goalkeeper title fails. A boot of noodles under a lookalikes title fails.</li>
+  </ol>
+  <p>Output one <code>refaudit/&lt;pack&gt;.md</code> per pack: what the reference actually contains, and the verdict.</p>
+</section>
+
+<section class="stage" id="s25">
+  <div class="shead"><div class="snum">2.5</div><h2>Route the pack</h2></div>
+  <p class="purpose">Decides whether Stages 3, 4 and 6 run at all.</p>
+  <div class="tw"><table>
+    <tr><th>Type</th><th>What it is</th><th>Route</th></tr>
+    <tr><td><b>A</b></td><td>On-field moments — Signature Moves, GK Assists, Pace Abuser, Oscar, Badge, Penalty Miss, Accidental Saves</td><td>Full clip pipeline: Stages 3, 4, 6</td></tr>
+    <tr><td><b>B</b></td><td>Facts, names, eligibility, transfers, what-ifs — Primes, Another Nation, Transfers, Forgot Club, Mispronounce, Blame First, PSG Trio</td><td><b>Skips describing entirely.</b> Watch references only for format. Straight to Stage 5</td></tr>
+  </table></div>
+  <p>Track progress as a count — Type A / Type B, done / remaining, and which specific clips are outstanding. He asks when a run feels long, and the honest answer is short.</p>
+</section>
+
+<section class="stage" id="s3">
+  <div class="shead"><div class="snum">03</div><h2>Source the clip</h2></div>
+  <p class="purpose">Never declare a moment unfindable after one search.</p>
+  <div class="calls"><div><span class="c">youtube_search</span>(query, type="video", sort_by="view_count") — several angles at once</div></div>
+  <ol>
+    <li>Player + opponent + competition + action</li>
+    <li><b>How a fan would phrase it</b> — surfaces the viral cut; formal phrasing surfaces the archive</li>
+    <li>Official match highlights for that fixture</li>
+    <li><b>The reference it came from</b> — three picks were written as "no clip found" while the frames sat in a Short already in hand</li>
+    <li><b>Category compilations</b> — highest-value target. One official compilation verified five picks in a single pass</li>
+    <li>Native-language phrasing for non-English leagues</li>
+  </ol>
+  <p><b>Keep queries to three or four words.</b> Long descriptive queries return zero. Prefer official league/club/federation → broadcaster → large clip channel → meme edit.</p>
+  <div class="gate"><b>Gate 3</b>Only declare unsourceable after two distinct angles <b>and</b> a compilation search <b>and</b> a re-watch of the reference. If a search returns only gameplay, the moment probably is not real.</div>
+</section>
+
+<section class="stage" id="s4">
+  <div class="shead"><div class="snum">04</div><h2>The watch</h2></div>
+  <p class="purpose">One scoped pass per moment, not one per video.</p>
+  <div class="calls"><div><span class="c">start_video_analysis</span>(url, media_resolution="default", prompt=&lt;scoped&gt;) — all in parallel</div></div>
+  <div class="fail"><b>Cost — check the source duration, not the window</b>A pass bills on the whole video. A 16-minute compilation is ~15 credits per moment, so five moments in one compilation is ~75, not ~15. Quote the real number before spending. <a href="#E15">E15</a></div>
+  <h3>The standing prompt asks for, by name</h3>
+  <ol>
+    <li>All on-screen caption text <b>exactly, character for character</b> — he plants misspellings as comment bait</li>
+    <li>Shirt numbers <b>only where literally readable</b>, with "not legible" required otherwise</li>
+    <li>The ranking number shown on screen</li>
+    <li><b>How each clip ends</b> — and which corner</li>
+    <li>Anywhere on-screen text contradicts the narration</li>
+    <li><b>Commentary verbatim with timestamps</b> — the highest-value output of any watch. It names players, settles outcomes, and hands over captions free</li>
+    <li>Real vs game vs fabricated, per segment</li>
+    <li><b>An explicit CANNOT DETERMINE section.</b> Ask for it by name. A gap beats a confident error</li>
+  </ol>
+  <h3>Three modes — match the mode to the moment</h3>
+  <ul>
+    <li><b>Numbered beats with timestamps</b> where the sequence is the story — scrambles, deflections, goal-line pinball</li>
+    <li><b>Named stations, no clock</b> where the event is under two seconds — receiving, the feint, the turn, the exit</li>
+    <li><b>Hybrid</b> where there is both a technique and a sequence — dives, long runs, two-part events</li>
+  </ul>
+  <h3>One vocabulary, fixed</h3>
+  <div class="vocab">
+    <span>SOURCE</span><span class="key">AUTHENTIC</span><span>PICTURE</span><span>SCENE</span>
+    <span>READ OFF THE KIT</span><span>BOARDS</span><span>CROWD</span><span>SCOREBUG</span>
+    <span>BROADCAST GRAPHICS</span><span>OVERLAY</span><span>SPEED GRAPHIC</span>
+    <span>DELIVERY / ACTION</span><span>CELEBRATION</span><span>CAMERA</span>
+    <span>COMMENTARY</span><span>AUDIO</span><span class="key">CANNOT DETERMINE</span>
+  </div>
+  <p><code>BOARDS</code> is pitchside sponsors, <code>CROWD</code> is fan banners, <code>BROADCAST GRAPHICS</code> is the broadcaster's overlays and <code>OVERLAY</code> is the <i>publisher's</i> — the ones the editor must mask. The two keyed fields appear as labels in every file, never buried in prose.</p>
+  <h3>Safe / soft / unsafe</h3>
+  <ul>
+    <li><b>Safe</b> — which foot, how it ends, on-screen text, commentary, kit, camera angles, whether play stopped</li>
+    <li><b>Soft</b> — touch counts, steps, distances, timings. <b>Say the foot, never the number.</b> Son returned 9, then 10, then 11–12 across three passes; the feet never once disagreed</li>
+    <li><b>Unsafe</b> — player identity and outcome. Run the ending check, then take conflicts to Stage 5</li>
+  </ul>
+  <h3>Is it a game? Unreliable in both directions</h3>
+  <p>Official club, league and federation channels are trusted by default — a gameplay flag on one is the model being wrong. A call only counts with <b>visible game UI</b>: squad menus, rating cards, stamina bars, radar, controller prompts. Roster plausibility is worthless. A true positive looks like <b>a PS5 logo under the scoreline</b>.</p>
+  <p><b>Fabricated</b> means game or doctored — catch it with a scoreboard that contradicts itself between two shots of the same passage. <b>Manipulated</b> means real footage padded by looping, scrubbing or speed change. Check whether a "long" moment is actually long.</p>
+  <h3>Depth must be even</h3>
+  <p>Measure it. One pack averaged 382 words a clip while another averaged 713 — and the thin one was the two-part goalkeeper pack that least deserved to be thin. If one clip is a third the length of its pack-mates, that is a gap, not a style.</p>
+  <div class="gate"><b>Gate 4</b>Every pick has its own clip watched in <i>this</i> run. Never write a beat from a previous note — <a href="#E05">E05</a>. A comment can nominate a pick; only footage can confirm one.</div>
+</section>
+
+<section class="stage" id="s5">
+  <div class="shead"><div class="snum">05</div><h2>Verify independently</h2></div>
+  <p class="purpose">The stage that catches the worst errors. Do not hand him a question you could answer with a search.</p>
+  <div class="calls"><div><span class="c">WebSearch</span> → <span class="c">WebFetch</span> the best source — the club's own site over an aggregator</div></div>
+  <p>Everything in this list goes to the record <b>before</b> it is written down:</p>
+  <ul>
+    <li>The <b>type of restart</b> — goal kick, free kick, open play, corner <a href="#E04">(E04)</a></li>
+    <li>Any <b>outcome</b> — scored, saved, wide, over, which post <a href="#E08">(E08)</a></li>
+    <li>Any <b>number that will be spoken or appear on screen</b> <a href="#E06">(E06)</a></li>
+    <li>Dates, competitions, fixtures, scorelines</li>
+    <li>Any award, record or ruling</li>
+  </ul>
+  <div class="gate"><b>Gate 5</b>Every such claim carries a named source in the pack sheet. If a number is <i>not</i> in the footage, say so explicitly, so he knows he is adding it.</div>
+</section>
+
+<section class="stage" id="s6">
+  <div class="shead"><div class="snum">06</div><h2>Tie-break</h2></div>
+  <p class="purpose">When two passes disagree, a third scoped to the single clearest angle.</p>
+  <p>Ask <b>only</b> the disputed question, and require four things: the answer; the visual evidence for it, naming which leg plants and which boot contacts; a grade of <b>certain / likely / unsure</b>; and whether the moment of contact is <i>actually visible</i> or obscured. Tell it plainly that an honest "cannot tell" is more useful than a confident guess.</p>
+  <p>This settled Čech's kicking foot as left against an earlier pass that said right, and settled Son's feet while honestly reporting that the clearest angle starts mid-run.</p>
+</section>
+
+<section class="stage" id="s7">
+  <div class="shead"><div class="snum">07</div><h2>Assemble</h2></div>
+  <p class="purpose">The formula, and the checks that stop a pack repeating itself.</p>
+  <p><b>5→1.</b> #5 proven hook · #4 most engaging or controversial · #3 engaging · #2 least engaging but proven · #1 conventional finisher, hard declarative. If Part 1 ran 5→1 under a "Top 10" title, <b>Part 2 runs 10→6</b>.</p>
+  <p><b>Variety is judged on the footage, not the label.</b> Duplicates are defined by <i>mechanism</i>, not outcome — three penalties all ending over the bar can still be fine if one's cause is unique. When two picks share a mechanism, name the pair and drop one.</p>
+  <p><b>Counting across a pack finds lines nobody else has.</b> "Every one of these runs is one-footed" came out of tallying feet across five clips. "Every delivery method that appears twice splits by side" came out of re-counting a taxonomy.</p>
+  <div class="fail"><b>Test format fit against the picks, never the reference</b>Recommending a format change because the <i>reference</i> needed 69 seconds for one story — when the picks in hand were five one-line facts — was a real error. <a href="#E09">E09</a></div>
+  <div class="tw"><table>
+    <tr><th>Sequel penalty</th><th>n</th><th>Median</th></tr>
+    <tr><td>Non-sequel</td><td>411</td><td>89,192</td></tr>
+    <tr><td>"Part 2"</td><td>26</td><td>41,558</td></tr>
+  </table></div>
+  <p>Part 2s do less than half. Redo beats Part. Say this in any header containing a sequel.</p>
+</section>
+
+<section class="stage" id="s8">
+  <div class="shead"><div class="snum">08</div><h2>Decide</h2></div>
+  <p class="purpose">Law 1 lives here.</p>
+  <p>For each open question, ask two things. <b>Are the options genuinely close?</b> If one is clearly better on evidence, decide it. <b>Is the choice taste or evidence?</b> Evidence is yours. Taste is his.</p>
+  <p>When you decide: state the reasoning, name the cost plainly, and put the alternative in the subs so it reverses in one tap.</p>
+  <p>When it <i>is</i> a genuine fork, it goes in the notes app's decisions panel — never only in chat, never only in a PDF, <b>and never in a calendar</b>. Two to four concrete, tappable options, never an open-ended question. Include the do-nothing option where one exists. Mark your recommendation once and leave it.</p>
+  <div class="gate"><b>Always</b>Surface the app link in your reply every time something needs his input.</div>
+</section>
+
+<section class="stage" id="s9">
+  <div class="shead"><div class="snum">09</div><h2>Deliver</h2></div>
+  <p class="purpose">The app, the PDF, and three checks in this order.</p>
+  <p>Status labels describe the <b>pack's readiness</b>, never the audit's verdict: <code>Locked</code> · <code>Needs a call</code> · <code>Shoot knowing</code> (complete, no format precedent) · <code>Slots open</code>.</p>
+  <ol>
+    <li><b>Parse</b> — eval the arrays with node before republishing. One broken quote blanks the page.</li>
+    <li><b>Render and read it back</b> — <code>pdftoppm</code> a page to an image and open it. A parse check is not a render check <a href="#E11">(E11)</a>.</li>
+    <li><b>Click through</b> — Playwright with the preinstalled Chromium, <code>window.claude</code> stubbed to an in-memory db. Screenshot at 390px and in dark mode.</li>
+  </ol>
+  <div class="fail"><b>Bound every in-place splice</b>Compute the array's start <i>and</i> end first, pass both to every find(), and recompute the end after each edit. An unbounded find jumped into the next array and produced an eighteenth pack. <a href="#E12">E12</a></div>
+  <p>PDFs: reportlab + DejaVu. Strip emoji, CJK and Arabic — they render as empty boxes. <code>pypdf.extract_text</code> throws on subsetted DejaVu; ignore it and use <code>pdftotext</code>.</p>
+</section>
+
+<section class="stage" id="s95">
+  <div class="shead"><div class="snum">9.5</div><h2>QA gate</h2></div>
+  <p class="purpose">Runs before delivery, and it blocks. 592 checks, every one descended from a real error.</p>
+  <div class="calls">
+    <div><span class="c">python3 qa.py</span> &mdash; everything &middot; exit non-zero blocks delivery</div>
+    <div><span class="c">python3 qa.py --pack</span> &lt;id&gt; &mdash; one pack</div>
+    <div><span class="c">python3 qa.py --json</span> &mdash; machine-readable</div>
+  </div>
+  <p><b>Three severities.</b> <code>FAIL</code> blocks &mdash; nothing ships until it is fixed. <code>WARN</code> does not block, but <b>every warning must be acknowledged by name in the report</b>; silently passing one is the same as hiding it. <code>INFO</code> is a note, usually a soft figure that should stay out of the script.</p>
+  <h3>What it checks</h3>
+  <div class="tw"><table>
+    <tr><th>Group</th><th>Checks</th><th>From</th></tr>
+    <tr><td><b>Structure</b></td><td>Five picks per pack &middot; three subs &middot; every pick has an explanation line</td><td>&mdash;</td></tr>
+    <tr><td><b>Placeholders</b></td><td>No &ldquo;In rework&rdquo; or &ldquo;Slot open&rdquo; in a pack marked locked, or in any live pick row</td><td>audit #8</td></tr>
+    <tr><td><b>Coverage</b></td><td>Every Type A pick has a deep description that names it</td><td><a href="#E05">E05</a></td></tr>
+    <tr><td><b>Labels</b></td><td>Every file carries <code>AUTHENTIC:</code> and <code>CANNOT DETERMINE</code> &middot; no bare label without a colon, which renders as body text instead of a label</td><td><a href="#E10">E10</a> <a href="#E11">E11</a></td></tr>
+    <tr><td><b>Vocabulary</b></td><td>No banned variant &mdash; read off the shirts, fascia banners, fan banners, card graphics</td><td><a href="#E10">E10</a></td></tr>
+    <tr><td><b>Soft figures</b></td><td>A touch, step or stride count stated without the instability caveat within 520 characters</td><td><a href="#E07">E07</a></td></tr>
+    <tr><td><b>Spoken numbers</b></td><td>Any measurement in the production sheet with no source or caveat nearby &mdash; the sheet is what he reads out</td><td><a href="#E06">E06</a></td></tr>
+    <tr><td><b>Depth</b></td><td>Any clip under half its pack&rsquo;s median word count</td><td>depth</td></tr>
+    <tr><td><b>Cross-surface</b></td><td>App, final_packs.json and build_master.py must agree on pack ids &mdash; a missing entry is a build failure</td><td><a href="#E12">E12</a></td></tr>
+    <tr><td><b>Sheet picks</b></td><td>Every pick name in final_packs.json appears in the data.py production sheet for that pack &mdash; the sheet is what he shoots from</td><td><a href="#E24">E24</a></td></tr>
+    <tr><td><b>Type B sources</b></td><td>Every Type B pick has a source or an explicit from-comments marker; the count of unverified picks is reported</td><td><a href="#E22">E22</a></td></tr>
+    <tr><td><b>Deliverable</b></td><td>No characters the PDF font cannot render</td><td>deliver</td></tr>
+  </table></div>
+  <h3>The adversarial pass &mdash; because self-grading is weak</h3>
+  <p>The script catches what is mechanical. It cannot catch a wrong claim that is well-formed. So once the gate returns clean, spawn a subagent whose <i>only</i> job is to find faults:</p>
+  <div class="calls" style="white-space:normal">Find what is wrong, not what is right. Does any description contradict itself? Is any outcome, date, competition, award or type of restart stated from footage rather than the written record? Is any number presented as fact the footage cannot support? Do two picks share a mechanism? Does any pick fail the title promise? Report only problems, with file and line, ranked by damage.</div>
+  <p><b>A reviewer that reports nothing has not done its job</b> &mdash; send it back once with the weakest pick named. Anything it confirms goes into the log.</p>
+  <div class="fail"><b>The rule this stage exists to enforce</b>A parse check is not a render check, and neither is a truth check. The three layers are mechanical, visual and adversarial. Running one and calling it QA is how <a href="#E11">E11</a> and <a href="#E16">E16</a> both shipped.</div>
+</section>
+
+<section class="stage" id="s10">
+  <div class="shead"><div class="snum">10</div><h2>Self-audit</h2></div>
+  <p class="purpose">Never skip. This is the part that makes the system improve.</p>
+  <ul>
+    <li><b>Paste the QA gate&rsquo;s own summary line</b> &mdash; passed / warnings / failures &mdash; then list <b>every warning by name</b> and say what you did about each. Report only the failures.</li>
+    <li><b>List what you got wrong</b>, including anything corrected mid-run. What, why, and the rule that would have prevented it.</li>
+    <li><b>Append each to the error log</b> with a new E-number. <b>If the error was mechanically detectable and the gate missed it, add a check for it to <code>qa.py</code> in the same breath</b> &mdash; that is how the gate gets stronger instead of staying still.</li>
+    <li><b>Check for a new pattern.</b> The log names five. Say which this run's errors fit, or add a sixth.</li>
+    <li><b>Propose the skill update</b> so the lessons survive a lost log.</li>
+    <li><b>Report in plain prose</b> — what shipped, what you decided and why, what is genuinely waiting on him, and what you got wrong. Own errors out loud and say which part changed. Never quietly reissue.</li>
+  </ul>
+</section>
+
+<section class="stage" id="log">
+  <div class="shead"><div class="snum">24</div><h2>The error log</h2></div>
+  <p class="purpose">Every entry is a real failure on a real batch. Read at Stage 0, appended at Stage 10.</p>
+
+  <div class="err" id="E01"><div class="ehead"><span class="eid">E01</span><h3>Attributed his own video to a stranger</h3><span class="estage">Stage 2</span></div>
+  <dl><dt>Why</dt><dd>Never checked own.json before attributing. The video was his own 3.24M hit.</dd>
+  <dt>Rule</dt><dd class="rule">Before calling any video someone else's, grep own.json. A reference that looks like a stranger's can be his biggest hit in that lane.</dd></dl></div>
+
+  <div class="err" id="E02"><div class="ehead"><span class="eid">E02</span><h3>Said no Part 2 existed when it did</h3><span class="estage">Stage 1, 7</span></div>
+  <dl><dt>Why</dt><dd>Did not search his catalogue for the sequel before calling it a gap. It existed, at 0.14× the parent.</dd>
+  <dt>Rule</dt><dd class="rule">Before proposing any sequel, list the parent's numbered entries and search own.json for an existing one.</dd></dl></div>
+
+  <div class="err" id="E03"><div class="ehead"><span class="eid">E03</span><h3>Čech's kicking foot wrong</h3><span class="estage">Stage 6</span></div>
+  <dl><dt>Why</dt><dd>One pass, on a wide angle where the contact was not clearly visible.</dd>
+  <dt>Rule</dt><dd class="rule">When a foot or body-part call matters, run a second scoped pass on the closest replay, graded certain / likely / unsure, with a statement of whether contact was visible.</dd></dl></div>
+
+  <div class="err" id="E04"><div class="ehead"><span class="eid">E04</span><h3>"Not a goal kick" — confidently wrong</h3><span class="estage">Stage 5</span></div>
+  <dl><dt>Why</dt><dd>Vision described a dead ball inside the six-yard box and I overrode it with an assumption, writing the denial as a positive correction. Any football fan would have known instantly.</dd>
+  <dt>Rule</dt><dd class="rule">Any claim about the type of restart goes to the written record first. The general law: errors cluster wherever the picture needed background knowledge underneath it.</dd></dl></div>
+
+  <div class="err" id="E05"><div class="ehead"><span class="eid">E05</span><h3>Described a sequence backwards</h3><span class="estage">Stage 4</span></div>
+  <dl><dt>Why</dt><dd>Wrote the beat from memory of an earlier pack note rather than from a watch.</dd>
+  <dt>Rule</dt><dd class="rule">Never write a beat from a previous note. Every described beat traces to a watch in this run.</dd></dl></div>
+
+  <div class="err" id="E06"><div class="ehead"><span class="eid">E06</span><h3>Three millimetre figures, two of them wrong</h3><span class="estage">Stage 5</span></div>
+  <dl><dt>Why</dt><dd>Part 1 says 11.7mm, my note said 11.2mm, and the club's own site and Sky's own headline both say 11mm. The figure appears nowhere in the footage.</dd>
+  <dt>Rule</dt><dd class="rule">Any number that will appear on screen or be spoken gets a named source. If it is not in the footage, say so, so he knows he is adding it.</dd></dl></div>
+
+  <div class="err" id="E07"><div class="ehead"><span class="eid">E07</span><h3>Touch counts treated as fact</h3><span class="estage">Stage 4, 6</span></div>
+  <dl><dt>Why</dt><dd>Treated a soft field as a safe one. Three passes returned 9, 10 and 11–12; the pack's headline said "nine".</dd>
+  <dt>Rule</dt><dd class="rule">Say the foot, never the number. Same for distances, step counts and durations.</dd></dl></div>
+
+  <div class="err" id="E08"><div class="ehead"><span class="eid">E08</span><h3>Two vision passes agreed and both were wrong</h3><span class="estage">Stage 5</span></div>
+  <dl><dt>Why</dt><dd>Used footage to settle an outcome. Both said crossbar; the shootout record says wide left.</dd>
+  <dt>Rule</dt><dd class="rule">Never let two agreeing vision passes stand in for a record check — they can agree and both be wrong.</dd></dl></div>
+
+  <div class="err" id="E09"><div class="ehead"><span class="eid">E09</span><h3>Imported the reference's story onto his picks</h3><span class="estage">Stage 7</span></div>
+  <dl><dt>Why</dt><dd>Recommended splitting a pack because twelve seconds cannot carry a saga — but the saga was the reference's, and his five picks were one-line facts.</dd>
+  <dt>Rule</dt><dd class="rule">Test format fit against the picks in hand, never against what the reference contained. A reference is a format source, not a content source — and that cuts both ways.</dd></dl></div>
+
+  <div class="err" id="E10"><div class="ehead"><span class="eid">E10</span><h3>Label drift made the notes unscannable</h3><span class="estage">Stage 4</span></div>
+  <dl><dt>Why</dt><dd>Same field under different names across fourteen files — kit vs shirts, boards vs fascia banners, authentic vs real broadcast.</dd>
+  <dt>Rule</dt><dd class="rule">One fixed vocabulary. Substance being right is not enough if the reader cannot scan for it.</dd></dl></div>
+
+  <div class="err" id="E11"><div class="ehead"><span class="eid">E11</span><h3>Reintroduced the defect I had just fixed</h3><span class="estage">Stage 9</span></div>
+  <dl><dt>Why</dt><dd>Wrote new files in a style the renderer did not expect, then validated by parsing instead of rendering.</dd>
+  <dt>Rule</dt><dd class="rule">A parse check is not a render check. Render a page to an image and read it back before sending.</dd></dl></div>
+
+  <div class="err" id="E12"><div class="ehead"><span class="eid">E12</span><h3>A splice ran past the array boundary</h3><span class="estage">Stage 9</span></div>
+  <dl><dt>Why</dt><dd>An unbounded find on a delimiter shared by two adjacent arrays ate a closing bracket and produced an eighteenth pack.</dd>
+  <dt>Rule</dt><dd class="rule">Bound every in-place splice to the array being edited. Compute start and end first, pass both to every find, recompute after each edit.</dd></dl></div>
+
+  <div class="err" id="E13"><div class="ehead"><span class="eid">E13</span><h3>Over-escalated decisions</h3><span class="estage">Stage 8</span></div>
+  <dl><dt>Why</dt><dd>Put eight calls to him, several with a clear recommendation I could have acted on — then created two more from his answers.</dd>
+  <dt>Rule</dt><dd class="rule">Decide by default. Escalate only a genuine fork. Flagging feels safe and is not: it moves the work to him.</dd></dl></div>
+
+  <div class="err" id="E14"><div class="ehead"><span class="eid">E14</span><h3>Read "appointment" as a calendar event</h3><span class="estage">Stage 8</span></div>
+  <dl><dt>Why</dt><dd>Took the most literal reading of an ambiguous word without checking which tool fit his setup.</dd>
+  <dt>Rule</dt><dd class="rule">When an instruction could mean a tool he already uses or one he does not, assume the one already in the workflow.</dd></dl></div>
+
+  <div class="err" id="E15"><div class="ehead"><span class="eid">E15</span><h3>Under-quoted credits by six times</h3><span class="estage">Stage 4</span></div>
+  <dl><dt>Why</dt><dd>Assumed the window length drove the cost. A scoped pass bills on the whole source video.</dd>
+  <dt>Rule</dt><dd class="rule">Check the source duration, not the window, before quoting. Correct an estimate out loud the moment it moves.</dd></dl></div>
+
+  <div class="err" id="E16"><div class="ehead"><span class="eid">E16</span><h3>A label made finished work look broken</h3><span class="estage">Stage 9</span></div>
+  <dl><dt>Why</dt><dd>Three complete packs sat under a red "Ref failed" pill, which described the reference's verdict rather than the pack's state.</dd>
+  <dt>Rule</dt><dd class="rule">A status label describes the pack's readiness, never the audit's verdict. "Shoot knowing" is a different state from "blocked" and must look different.</dd></dl></div>
+
+  <div class="err" id="E17"><div class="ehead"><span class="eid">E17</span><h3>Fixed a defect in three files and called it fixed</h3><span class="estage">Stage 7</span></div>
+  <dl><dt>Why</dt><dd>The bare-label defect was corrected in the three files I had just written; QA then found 39 more instances across 14 files. A local fix felt like a fix.</dd>
+  <dt>Rule</dt><dd class="rule">A correction is not done until it is grep-confirmed absent from every surface. Fix by pattern across the whole tree, then prove it with a search, not memory.</dd></dl></div>
+
+  <div class="err" id="E18"><div class="ehead"><span class="eid">E18</span><h3>A stale audit contradicted a filled pack three pages later</h3><span class="estage">Stage 7</span></div>
+  <dl><dt>Why</dt><dd>The reference audit still said “mispronounce IS NOT FINISHED” after the three empty slots had been filled on Joel’s instruction.</dd>
+  <dt>Rule</dt><dd class="rule">When a pack changes, re-date every audit note it supersedes: [RESOLVED &lt;date&gt;]. Old verdicts do not expire on their own.</dd></dl></div>
+
+  <div class="err" id="E19"><div class="ehead"><span class="eid">E19</span><h3>The first QA gate was mis-calibrated and cried wolf</h3><span class="estage">Stage 9.5</span></div>
+  <dl><dt>Why</dt><dd>73 warnings on the first run, most of them footage measurements inside deep files that were never going to be spoken. A gate that fires on everything gets ignored.</dd>
+  <dt>Rule</dt><dd class="rule">Measurements inside deep/ are INFO (a record); in data.py they are WARN (spoken). The count caveat window is 520 characters and the caveat regex is broad. Calibrate against the last clean batch before trusting a count.</dd></dl></div>
+
+  <div class="err" id="E20"><div class="ehead"><span class="eid">E20</span><h3>Over-corrected, and stated a disputed outcome as settled fact</h3><span class="estage">Stages 5, 7</span></div>
+  <dl><dt>Why</dt><dd>Wrote that Eze’s penalty “went WIDE LEFT — the record says so” as settled. A third footage pass said over the bar, agreeing with the two I had overruled; TNT’s commentary says only “missed”.</dd>
+  <dt>Rule</dt><dd class="rule">Law 2 ranks which source outranks which; it does not make one source certain. One text source against three passes is a CONFLICT to record, not a verdict. Say DISPUTED, give both readings, give the safe wording (“he missed”), and check the variety knock-on downstream.</dd></dl></div>
+
+  <div class="err" id="E21"><div class="ehead"><span class="eid">E21</span><h3>Thirty-five clips had no single place listing where they live</h3><span class="estage">Stages 4, 9</span></div>
+  <dl><dt>Why</dt><dd>Source ids and windows were scattered across fourteen deep files; Eze’s had no window anywhere. Descriptions were written to be read, not cut from.</dd>
+  <dt>Rule</dt><dd class="rule">Every Type A pick gets a source id, link, in/out window and cut-on angle in clips.py as its description is written. The manifest ships as Part 5.5 of the send-off and as a CSV.</dd></dl></div>
+
+  <div class="err" id="E22"><div class="ehead"><span class="eid">E22</span><h3>Nine packs had picks but no verification layer</h3><span class="estage">Stages 2.5, 5</span></div>
+  <dl><dt>Why</dt><dd>Type B packs shipped with one line per pick and nothing behind it; 20 of 45 rested on Joel’s own comments. “Skips describing” had slid into “skips verifying”.</dd>
+  <dt>Rule</dt><dd class="rule">Type B’s equivalent of a description is a SOURCED FACT. Every Type B pick carries its source in typeb.py or an explicit C (from comments) marker. Verify quotes, fees and precise numbers first.</dd></dl></div>
+
+  <div class="err" id="E23"><div class="ehead"><span class="eid">E23</span><h3>“Retired at 28” would have been wrong by two years</h3><span class="estage">Stage 5</span></div>
+  <dl><dt>Why</dt><dd>Van Basten’s last match was at 28 (1993 CL final) but he formally retired on 17 August 1995 aged 30. “Done at 28” survives; “retired at 28” does not.</dd>
+  <dt>Rule</dt><dd class="rule">When a career fact has two candidate dates — last appearance vs retirement, signed vs debuted — record BOTH and say which you mean. The gap is usually the better story.</dd></dl></div>
+
+  <div class="err" id="E24"><div class="ehead"><span class="eid">E24</span><h3>The production sheet still had a replaced pick two days later</h3><span class="estage">Stages 7, 9.5</span></div>
+  <dl><dt>Why</dt><dd>data.py’s Penalty Part 2 sheet — the page Joel shoots from — still listed Tah at #2 after Budimir replaced him in the app, the JSON, the manifest and the deep files. The cross-surface check compared pack ids, not pick names.</dd>
+  <dt>Rule</dt><dd class="rule">A pick change is grep-confirmed absent from every surface before it is called done. QA now compares pick NAMES between final_packs.json and the data.py sheet and fails on a mismatch.</dd></dl></div>
+
+  <div class="patterns">
+    <b style="font-family:Archivo,sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)">The five patterns underneath the twenty-four</b>
+    <ol>
+      <li>Errors cluster where the picture needed <b>background knowledge</b> under it. <i>(E04, E06, E08, E20, E23)</i></li>
+      <li>Repeat passes agree on <b>what is in frame</b> and disagree on <b>counts</b>. <i>(E03, E07)</i></li>
+      <li>Writing from a previous note rather than a fresh watch <b>propagates errors</b>. <i>(E05, E09, E17, E18, E24)</i></li>
+      <li>Validation that is not the <b>same kind</b> as the output misses defects. <i>(E11, E12, E19, E22)</i></li>
+      <li>Flagging feels safe and is not — it <b>moves the work to him</b>. <i>(E13, E16)</i></li>
+    </ol>
+  </div>
+</section>
+
+<div class="runit">
+  <b>Run it</b>
+  Run the LxthalFC pack system on &lt;packs / this picker paste / these reference links&gt;.<br>
+  Start at Stage 0 and work through to Stage 10. Decide by default; only genuine forks go in the app.<br>
+  Report failures and what you got wrong, not a wall of passes.
+</div>
+</div>
