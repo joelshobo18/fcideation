@@ -1,0 +1,574 @@
+LxthalFC Scriptwriter Handbook v3
+Updated 10 Sept 2026. One document that replaces everything before it: Rules v2, the original Scriptwriter
+Rules PDF, the Clip Sourcing SOP, the Pre-Submission Checklist, the Essential Football Terms list, and every
+written instruction from the WhatsApp chat (25 Jul – 10 Sep). Lines tagged NEW were added from the chat
+since v2. Every rule here has been broken at least once. Keep this open next to you for every video.
+
+
+1. Before you touch a new video
+• NEW Order of work, every session: (1) read every new doc comment in every week, starting from Week 1,
+  and reply to each one; (2) do the revisions; (3) only then start new videos.
+• NEW Keep this handbook next to you for every video. If a recent note seems to contradict it, tell Joel rather
+  than choosing yourself.
+• NEW Work through videos in chronological order. There is no Trello; the doc is the system.
+• NEW Minimum 5 new scripts per day, even while revising old ones. Build a routine; finishing 20 of 35 in a
+  week is not acceptable. But don't rush volume either: stacked speed means stacked mistakes.
+• NEW Know the channel. Turn on post notifications for youtube.com/@thelxthalfc and watch every video
+  that goes out. Study 5–7 videos closely to learn how Joel talks about moments and which details in a
+  description let him say certain lines.
+• NEW Communication first. Ask questions before the work instead of saying “got it” and delivering
+  surprises. Joel would rather talk it through than discover errors after.
+
+
+2. First decision: which type of video is it?
+Get this wrong and the whole video is a redo. Decide before you search for a single clip.
+
+Type A — Clip / moment videos
+Top 5 goals, moments, celebrations, skills, fails, disrespect, sportsmanship, etc. Anything where the clip
+itself is the content.
+• Ordered by the Viral Formula (Section 3). Never chronological.
+• Sourced from viral reference videos (Section 4).
+• You are the engine behind every pick. AI is not.
+Type B — Facts / stats / list videos
+Fastest goals, best save from every World Cup, Ballon d'Or if Messi and Ronaldo never existed, records, best
+player born each month, combined XIs, kings of each league.
+• NEW Quick test: if the title has a number or unit behind it (seconds for fastest goals, goals for most goals,
+  years/editions), it is fact-based.
+• Ordered chronologically or numerically, never by the viral formula. Counting starts at 5: lowest number →
+  highest, or as the notes say (e.g. “Best save from every World Cup” runs 2026 – 2022 – 2018 – 2014).
+  Always include the most recent edition — there is no excuse for a World Cup video with no 2026.
+• NEW Lists must follow reality. World Cups are every 4 years, so parts run through real editions (e.g.
+  2026–2010), never overlapping ranges like 2022–2018 then 2018–2026.
+• These are “Claude jobs”: use Claude to build the list, then verify every entry yourself. You still write the
+  explanation in your own words.
+• NEW If the notes say “use Claude”, it is an instruction, not an option.
+• The viral formula is not needed here, but the video still needs a strong start — say in the notes if you think
+  an order change would help and let Joel decide.
+
+Name / story lists (no number in the title)
+NEW Players who retired too early, greatest player in every country's history, scariest defenders. Off-pitch,
+player-focused content.
+• NEW Search the exact title on YouTube first and check Shorts. Rotate keywords when results dry up
+  (“players who retired too early”, etc.).
+• NEW Shortlist only players who appear in viral videos on the topic, and verify each one fits the title (elite
+  AND retired — if you can't confirm they were elite, cut them).
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                           Page 1
+• NEW Once viral references are exhausted, use Claude: paste the title, ask for 15 (or 30) ranked candidates
+  with facts, then hand-pick your 5 on what grabs attention (big name, controversy, story). You can paste
+  the criteria in and ask it to pick. A video on each player isn't required — judge on status and story. That's
+  how we make videos nobody has seen before.
+• NEW Verify Claude's output — it bugs out (it suggested Nesta, Sócrates, obscure names). Prefer recent,
+  renowned players; viewers won't know Nakata-tier names. Older players only if the edit style suits them.
+• NEW Order: #5 = the player from the most viral reference video (Lahm). #4 = the most engaging story
+  (Zidane, headbutt). #3 = more renowned/recent. #2 = less recent. #1 = the most prestigious name
+  (Cantona) — name weight applies.
+• NEW Format: names with a brief description. Specify who vs who where relevant and show the selected
+  one.
+• NEW Country lists: use big footballing nations, one player each (Brazil – Ronaldinho, Argentina – Messi),
+  never the same country twice across parts, and split so both parts are quality. Skip players too old for
+  good footage (Pelé).
+• NEW Always put the viral reference links in the reference field — Joel couldn't find the Lahm video
+  otherwise.
+
+
+3. The Viral Formula (Type A, non-negotiable)
+• #5 — Proven hook. The start clip of the most viral reference video. Never the least viral option.
+  Attention is won or lost here; you never win it back later.
+• #4 — Most engaging clip. Backed by comment data (quote the top comment and its likes).
+• #3 — Engaging, less than #4, more than #2.
+• #2 — Least engaging of the five. Still a banger — just the weakest banger.
+• #1 — The infamous #1. Visually the best / represents the video style. Player-name weight matters here
+  (~5%).
+• NEW #1 is not “the best clip”. It's a notable #1 that is still good enough to feel like a #1. You hook viewers
+  in inverse order: 4 down to 2 gets progressively less engaging. Check whether the reference used it at #1.
+• Proven hooks outweigh comments. Order of evidence: (1) clip used as a hook in a viral reference, (2) a
+  viral video on that clip, (3) comments. Comments only count for what they actually say — “Molina's shot
+  was good” is not engagement; a controversial or reaction-heavy comment is. Most comment-based
+  evidence belongs at #4, not #5.
+• NEW “Most mentioned in comments” is not the same as “most used as a hook”. The hook always wins #5.
+• NEW If every viral reference opens with the same clip, it is proven — never swap it (Bamford opened every
+  chest-and-volley reference; Neymar opened both references).
+• NEW #5 is a proven hook most of the time. The only exception is when you're deliberately improving on it
+  — and then you say why in the explanation.
+• NEW No proven hook exists? Use the moment with the most viral reposts / videos about it (e.g. Mbappé
+  being ignored) and state that in the explanation.
+• NEW Never reorder because commenters say “this should be first”. If we copy what worked, we get the
+  same comments and the same engagement on our video. Replicate what people engage with — don't
+  remove it.
+• Decide slots while shortlisting (“this is clearly a #4”). Don't order at the end.
+• Space out bait / wrong picks — never two next to each other. Two-thirds of the video must be obviously
+  right so the bait reads as debate, not clickbait.
+• Never Messi and Ronaldo in the same video at the start — nobody debates that.
+• When the notes give a joke pick (e.g. “Antony at 1”), it is there for a reason. Do it.
+• Do not invent your own formula. “Generally good at #1” logic is banned. Making your own version of the
+  criteria has caused two rounds of errors already.
+
+
+4. Sourcing references
+• Viral references only. Under 100k views = bad. 100k–500k = acceptable. 500k+ = best. Weight by views.
+  A non-viral reference proves its clips are NOT engaging enough.
+
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                          Page 2
+• NEW Views are the metric for videos — that's what you and Joel get paid on. Likes don't matter on videos;
+  they only matter on comments, where they show how many people agree.
+• NEW Reference videos must be about the title — nothing else. Random clips of the players are not
+  evidence of anything (the Neuer 23k case: that is nowhere near his most popular video).
+• A viral video on the topic outweighs comments under a different video (the Ward-Prowse case).
+• NEW Always search the exact video title on YouTube first — for every video type. Rotate keywords when
+  results dry up; this is a skill that grows with volume.
+• NEW Look through all the results before picking. The reference isn't always the first video (Sunday League
+  legends: the reference was the second video, with Vidal on the ball).
+• Search “top 5 / top 10 [thing]” first — you will find creators like FootyRanks and MarkFC with pre-sourced
+  clips. If a ready-made reference has 5 clips, take them and reorder.
+• Shorts before long-form. Long-form only when there is no Short, and then: link + timestamp next to every
+  clip, use comments and the most-replayed bar.
+• Safest play: take the best 5 from the one viral reference and reorder per the formula. Only add outside
+  clips if they clearly ADD value.
+• Copying the reference order exactly is “almost a crime” — reorder unless the reference order is already
+  perfect.
+• Every clip must be a banger. If you cannot find a banger, ask Joel — do not fill the slot. A simple cross is
+  not a “smartest moment”. A good goal is not a “disrespectful goal”.
+• Recency: for “right now” / “best in the world” titles use the current season, not last season. For young
+  viewers, trends means the last 1–2 years.
+• Think like the editor: grainy, watermarked, or pop-up-covered clips that Aldrich can't clean don't go in,
+  even if the clip is good.
+• Reference section = viral references only. Clips for the editor go next to the clip entry, not in the reference
+  section.
+• Steal comedic phrases from reference comments and work them in. Great artists steal.
+• NEW If Joel says an idea isn't proven and to scrap it, delete it and move on.
+
+5. Clip Sourcing SOP (highlight links)
+Workflow: build the video as usual (find clips, add references, explain every pick) → submit for review → once
+approved, source the highlight link for every selected clip and paste it into that version.
+
+Step 1 — Moment-focus or player-focus?
+• Moment-focus — the script describes a specific thing on the pitch (goal, skill, incident). Find and paste
+  the exact highlight link for each moment.
+• Player-focus — the video is about a player generally (e.g. “Top 5 Richest Footballers”). Just add the
+  player's name; the editor finds clips to match the audio. No links needed.
+• NEW Even for player-focus videos, still search the moments on YouTube; you can briefly describe moments
+  that have gone viral.
+
+Step 2 — Finding the clip
+• Search format: [Player] vs [Team] + the moment — “Roberto Carlos vs France free kick”, “Zlatan vs
+  England bicycle kick”, “Messi vs Getafe solo goal”. Adding the year helps. Check the kits in the reference
+  to confirm the match/era.
+• Turn on a UK VPN first (any free one). UK-restricted channels like Sky Sports / Sky Sports Retro upload the
+  best-quality, upscaled versions of iconic moments — usually the clip to use.
+
+Step 3 — Picking the best version
+• Open every decent candidate in its own tab and eliminate: 1080p minimum, least grainy; no watermarks,
+  logos over footage, effects or filters; official uploads (broadcaster/club channels) over re-uploads; view
+  count = credibility; full official highlight reels beat random re-uploads.
+• Don't overthink it — if a clip is clearly acceptable, use it. But take an extra minute if you suspect a cleaner
+  version exists.
+
+Step 4 — Struggling? / Step 5 — Last resort
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                           Page 3
+• Try in order: reverse image search a screenshot of the moment → Google the moment (Reddit, X,
+  Instagram) → ask in the chat.
+• Only after exhausting all of that, write “use clip from reference” in that clip's section. This mostly happens
+  with FootyRanks-style niche footage.
+
+
+6. Read the title. Then read it again.
+More redos come from misreading the title than from anything else. Define the key word before you start:
+• Tournament = World Cup, Champions League, Club World Cup, Euros, Copa América — not a league.
+• Leagues = one per country, consistent category. Don't mix Europe, a country, and a cup in one list.
+• Legends = past professional footballers. Not randoms, not current players.
+• Primes = player + era (“Messi 2010–12”) with a clip from that era. Not their best on-pitch moments.
+• Disrespectful goals = shooting from absurd range, skilling defenders up, humiliation. Not just good goals.
+• Worst World Cup winners = the weakest teams that won. Not each winner's worst World Cup.
+• Best goalkeepers ≠ World Cup goalkeepers. Teams ≠ players. Free kicks ≠ penalties. Viral trend
+  celebrations ≠ any celebration.
+• NEW Words that sound related are not the same: “World” ≠ “World Cup”.
+• NEW Retired = retired from football. Retired from international football is not retired (Neuer).
+• NEW Fails = moments that genuinely make the player look bad. An ordinary miss doesn't qualify.
+• There is one king of each league / competition. Never two.
+• Watch the full reference video before picking so you understand its theme and why the creator chose each
+  clip.
+• If you understand 90%, ask so you understand 110%. Paste the title + notes into Claude and ask it to
+  explain what's being asked, or ask on WhatsApp. Guessing is not an option.
+
+
+7. The Notes field
+• The notes are instructions, not suggestions. Read them before anything else. Ballon d'Or video =
+  2008–2023 only. “May be parts” = make the parts. “Add Drogba at 5” = Drogba at 5.
+• NEW “Add Carlos or Bale” style notes: if unsure whether it means one or both, ask — don't guess.
+• If you want to go off-note, message Joel on WhatsApp first and wait for a reply.
+• Never add things that weren't asked for (“ADDITIONS”, extra players, extra sections, suggestions inside
+  descriptions). It creates confusion and slows everything down.
+• If you change something across multiple videos that wasn't the norm, say so up front.
+• NEW Notes are universal. Joel won't make the same note 20 times: once you see a note on one video, add
+  it to your notes doc and fix it on every video.
+• When a correction has been given once, check your other pending videos for the same mistake before Joel
+  finds it. Repeating a corrected mistake across weeks is what turns a note into a redo.
+
+
+8. AI use
+• NEW “I hired you, not Claude. If Claude could do it all I wouldn't hire you.” Claude is a tool; you verify it
+  works and every decision is yours.
+• You decide. AI assists. For Type A videos AI never picks or orders clips. For Type B it can build the list —
+  you verify every line.
+• Verify AI output against reality: a combined XI runs GK – LB – CB – CB – RB – CDM – CM – CM – LW – RW –
+  ST. Neuer is still playing. Yamal was not at the 2018 World Cup. A club cannot play a nation.
+• For XI videos add who missed out for each position (e.g. “De Bruyne over X”).
+• NEW AI descriptions are fine for off-pitch, factual content (career stories, retirements): paste the shortlist
+  into Claude with “give a brief description of [player] + title”. AI descriptions are a no-go for on-pitch clips
+  — anything describing what happens in a clip is written by you, second-by-second.
+• NEW AI for grammar is fine only if the result still reads the way you wrote it. If it turns your line into flowery
+  AI prose (“immense physical force… flattened like a pancake”), that's a rewrite, not a grammar fix.
+• NEW Claude can't open links — describe or paste what it needs.
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                              Page 4
+• Never paste an AI explanation. Explanations are your reasoning for accepting each pick, in your words.
+• State your AI use on every video where you used it and what for (list, dates, terminology, grammar). Be
+  100% transparent.
+• AI for facts you then don't check is how fake matches end up in scripts.
+
+9. Descriptions
+Format: Player vs Team. That is how Joel reads it out.
+• Name the subject of the video in every clip. A Mbappé clip that never says “Mbappé” is a failed clip.
+• Name every player involved where possible (Haaland AND Szoboszlai). Use the jersey-reading tool, search
+  the moment on YouTube, or ask Aldrich. “Player in a blue kit”, “unnamed opponent”, “vs opponent”,
+  “career stats unavailable” — all banned. Find it.
+• Unknown player → describe by position or one feature (“the goalkeeper”, “female player”). Unknown team
+  → leave it out. No kit-colour fashion descriptions.
+• A club never plays a nation. If your description says Tottenham vs Colombia, something is wrong.
+• Describe the clip, not the reference video. Describe what happened, not what the creator joked about.
+• The description must serve the title. “Messi carried Argentina” means describe how he carried, not a full
+  move breakdown. “Celebrations” means describe the celebration, not the goal. Don't spend lines on a
+  player who isn't the subject.
+• Second-by-second, as if for a blind person: where did the shot go, did the keeper save it, did it go wide.
+  Then stop — no tangents.
+• NEW Narrate it like a commentator would narrate each second of play. Say where on the pitch the player is
+  and which part of the goal it went in (top left, bottom right). “Kicks the ball and scores” is poor.
+• NEW Describe exactly what you see — wrong body parts or actions (Savinho “stomach” when it was a shot)
+  go straight into the voiceover.
+• NEW Write in the tone Joel reads out on the channel. Stiff, over-built sentences leave him no room for
+  creative freedom and sound unnatural read aloud.
+• Don't miss the beat that makes the clip: Zirkzee waited for it to roll in; the woman didn't know she'd
+  scored; Ronaldinho went back and forth then back-heeled the nutmeg. These make or break the script.
+• Do not describe or mock famous viral dances. Name it, move on.
+• Add year / season when clips are similar (all Messi vs Real Madrid, Barça vs Real Madrid goals) so there's a
+  differentiator.
+• Add requested stats inside the entry (13/100 free kicks, sprint speed, record figures, finals lost, curses).
+  Specify left or right when it matters.
+• Simple mass-audience English. “Enforcers” → “defenders”. “Plant foot gives way” → “misses the throw”.
+  You gain nothing from fancy words; we are trying to get millions of views.
+• Only say “signature” / “iconic” / “famous” when certain. Every fact correct — never invent a player,
+  match, or score (the fake Demba Ba entry; Bale's bicycle kick was vs Barça, not Liverpool). Comedic
+  factual bending is Joel's call, not yours.
+• Sarcasm and Joel's voice (aura, rage-bait lines, running gags like Ronaldo's “100,000 career goals”,
+  “Ronaldo could never”) when it comes naturally, and always when the notes ask for it (e.g. “call the dive
+  genius”).
+
+
+10. Football terminology you must know
+These mistakes have each caused a wrong description. The full terms list is in Appendix B — use the main
+terms until they feel natural. NEW Before using any term you're not sure about, search it and understand it;
+they don't all mean the same thing.
+• Nutmeg — rolling the ball between an opponent's legs and getting past. Not “accidentally kicked it
+  through his own legs”, not “possession turned over”.
+• Taking a touch — controlling the ball. A first-time shot has no touch.
+• Corner kick — the set piece from the corner arc. A goal scored from near the corner flag in open play is
+  not a corner.
+• Outside the box ≠ outside the pitch. The box is the penalty area.
+• Intercept = stop the ball. Not dribble past.
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                           Page 5
+• Dummy / let it run — letting a pass go past you on purpose.
+• Throw-in vs throwing the ball at a player.
+• “Kick” is banned unless literally kicking a person. Say shot, pass, chip, cross, volley. Avoid “of
+  PSG”-style phrasing — just say the team.
+• “Attempts” ≠ did it. “Powerful dribble” means nothing. Spell football terms correctly (cleats, back heel) —
+  the AI reads misspellings wrongly.
+
+
+11. Explanations (every video, every clip)
+• One line per number, a full phrase, never one word. “Viral”, “least”, “mostly mentioned”, “good hook” are
+  not explanations. Put each number on its own line so it's easy to read.
+• Data-backed: “5 — start clip of [reference link], 1.2M views.” / “4 — top comment ‘Neymar was so cool’,
+  8,372 likes.” / “3 — more reacted than 2 in comments (pasted below).”
+• NEW Say what actually proves it. If #5 is there because of comments, say comments — “good hook” tells
+  Joel nothing (the Lukaku case).
+• NEW Explain why the clip IS in the video, not only why you didn't use something else. Both together is best
+  for context.
+• For Type B: state the ordering rule used (“chronological, newest first”).
+• Explain why THIS clip over the others, not why the whole video went viral.
+• Your reasoning, not the AI's. If you used AI, say so in the explanation.
+• Paste the comments you relied on — it helps.
+• No essays, no feelings, no struggles — that goes on WhatsApp.
+• Never skip. Writing the explanation is how you catch your own duplicate clips and wrong picks.
+
+12. Process
+• Colour code: Green = approved. Orange = fix. Red = remove/redo that clip. Red title = redo the whole
+  video. Two+ reds in one video = full redo.
+• NEW Status lives on the video number: its colour plus the approve time Joel adds. Approved means nothing
+  left to do on that video.
+• “Redo from scratch”: copy old work elsewhere, delete, restart the full flow — 15–20 clips → shortlist →
+  order → describe → explain. You may paste previously-approved descriptions back in; nothing else from
+  the old version.
+• Template exactly. Separate parts as 19.1, 19.2 etc. so each can be approved, audio-linked, and edited
+  independently. Fill every field. Never leave a section blank — “nothing here so I can't review” is a lost day.
+• NEW Never mark comments as resolved. Reply under each one — “noted”, “done”, or your answer. Even a
+  thumbs up. No reply means Joel can't close it and can't tell you've read it.
+• NEW If you don't understand a comment, reply “I don't understand” — not “I think I changed this”. Joel
+  never highlights something for no reason.
+• Say “done” only when it is done, in the place Joel asked. Re-read the comment before replying — “done”
+  on a video still in the wrong order gets re-opened.
+• NEW When Joel asks “what do you mean?”, explain it a different, clearer way. Don't repeat the same
+  sentence.
+• NEW Scripts that already have voiceover: acknowledge the notes, don't edit them. Recheck every script
+  that hasn't been read out yet.
+• NEW Recheck means every word, and every word is intentional — not a quick gloss. Take two days if
+  needed. For videos Joel hasn't reviewed, don't assume they're wrong; verify they're right.
+• Check your own work before submitting: duplicates, spelling, title match, notes followed, order direction
+  (we start at 5).
+• Notes doc is mandatory. Every rule, every mistake, and every voice-note instruction gets written down as
+  you listen — not remembered. Joel will not repeat himself.
+• Ask questions when unsure. Re-ask rather than guess.
+• NEW Repeated errors that waste review time may lead to penalties.
+
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                          Page 6
+13. Pre-Submission Checklist
+Any “No” = do not submit. Fix it first. Joel does not review videos that haven't passed this. Copy it under
+each video in the doc, or fill it in a separate tab and link it.
+Video no.: ________ Title: ______________________________ Type: A / B / Names Date: ________
+
+Check                                                                                                    Yes   No
+
+BEFORE SEARCHING
+
+NEW I read all new comments on every week, replied to each, and did revisions before starting this
+video.
+
+I have decided if this is Type A (clip → viral formula), Type B (facts/numbers →
+chronological/numeric) or a Name/story list.
+
+I have defined the key word in the title (tournament, leagues, legends, primes, etc.) and it matches
+what I made.
+
+I have read the Notes field and followed every instruction in it (including “use Claude”).
+
+I searched the exact title on YouTube first and watched the full reference video.
+
+SOURCING
+
+Every reference is viral (100k+ views, ideally 500k+), about the title, and linked in the reference
+section. I judged videos on views, not likes.
+
+I sourced from Shorts where possible; any long-form clip has link + timestamp next to it.
+
+Every clip is a banger. I did not fill a slot with a weak clip — if I couldn't find one, I asked Joel.
+
+The most recent edition / current season is included where the title needs it.
+
+The editor can realistically find and clean every clip (no heavy watermarks, grain, pop-ups, or
+too-old footage).
+
+ORDER
+
+Type A: #5 is a proven hook from the start of the most viral reference, not a comment pick. If not,
+the reason is in the explanation.
+
+Type A: proven hooks were weighed before comments; comment-based picks sit at #4/#3; #1 is a
+notable #1, not just “the best”.
+
+Type A: bait picks are spaced out; Messi and Ronaldo are not together at the start.
+
+Type B: order is chronological or numeric, starting at 5, in the direction the notes say, and follows
+real editions.
+
+I did not copy the reference's exact order without a reason, and I didn't reorder because
+commenters asked.
+
+DESCRIPTIONS
+
+Every entry is Player vs Team. The video's subject player is named in every clip.
+
+No “unnamed”, “unknown”, “vs opponent”, kit colours, or “stats unavailable”.
+
+No club vs nation, no wrong match, no player who wasn't there that year. Every fact checked.
+
+Each description serves the title, includes the key beat, and says where on the pitch / which part of
+the goal.
+
+Terminology is correct: nutmeg, touch, corner, box, intercept, dummy. “Kick” not used. Any term I
+was unsure of, I looked up.
+
+Simple English in Joel's reading tone, no tangents, no suggestions or notes to Joel inside the
+description.
+
+Requested stats, years/seasons, left/right are included where asked or needed.
+
+EXPLANATIONS
+
+One full-phrase line per number, with data (reference views, comment text + likes, or ordering
+rule).
+
+The explanations are my reasoning, not pasted from AI, and say why each clip is IN the video.
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                               Page 7
+Check                                                                                            Yes    No
+
+I stated where and how I used AI on this video.
+
+BEFORE SUBMITTING
+
+No duplicate clips, no blank sections, spelling checked, every word intentional.
+
+Template followed; parts separated as X.1, X.2 if needed.
+
+NEW Highlight/reference links are correct (source links added after approval per the SOP).
+
+I checked my other pending videos for any mistake Joel corrected this week.
+
+I have added anything new I learned to my notes doc.
+
+
+Joel's 8 questions before you send any pack
+1. Are the selected clips actually relevant to the topic? 2. Are they strong enough for the video? 3. Do the
+descriptions clearly explain what happens? 4. Do they match the clip accurately? 5. Is the ranking/order
+optimised? 6. Are the highlight/reference links correct? 7. Have you followed all notes on the doc? 8. Have
+you applied feedback from previous scripts?
+Signed off by scriptwriter: ______________________ AI used for: ______________________________
+
+
+14. Recurring failures, ranked by cost
+• Wrong video type: viral formula on a facts video, or chronology on a clip video.
+• Title misread (goalkeepers vs World Cup, teams vs players, primes vs moments, worst winners, free kicks
+  vs penalties).
+• Notes ignored — including “use Claude” treated as optional.
+• NEW Own criteria invented: “#1 = the best”, “most mentioned = hook”.
+• Comments weighed over proven hooks.
+• AI picked / explained and it wasn't verified.
+• Wrong facts: wrong match, wrong team, club vs nation, player not present that year.
+• Subject player not named; “unnamed / unknown” filler.
+• Terminology errors (nutmeg, touch, corner, box).
+• Missing the key beat of the clip.
+• Explanations skipped or one-word.
+• Non-viral or off-topic sourcing.
+• NEW Doc comments not replied to / marked resolved.
+• Same corrected mistake repeated in pending videos.
+
+15. The big picture
+The system is repeatable: read notes → pick the type → viral reference (A) or verified list (B) → best 5 →
+formula or chronological order → second-by-second player-vs-team descriptions → line-by-line data-backed
+explanations → checklist → submit → highlight links once approved. Once it's habit it runs on autopilot and
+review takes minutes. Master the baseline, then rage-bait upgrades and the view-bonus pay structure kick
+in.
+
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                         Page 8
+Appendix A — Role terms (from 3 Aug message)
+• Pay: $4 per approved script pack. Workload: 3–5 approved packs per day depending on posting volume
+  (minimum 5 new scripts/day currently expected).
+• A full approved pack: 7–10 clips researched, final 5 selected, correct order 5 → 1, clear description of each
+  clip, source link for each clip, title/topic included, ready for scripting/editing.
+• Approved only if clips are strong, the final 5 make sense, the order fits the format, descriptions are clear,
+  and source links are included. Weak clips, vague descriptions, or missing links = revise before it counts.
+• Examples: 4/day × 30 = 120 packs = $480; 5/day × 30 = 150 packs = $600 before bonuses. Realistic
+  with normal bonuses ~$700/month; up to ~$900–1,000 with high workload and strong performance.
+
+                    YouTube Shorts views (7 days after posting)                         Bonus
+
+                    100k                                                                $1
+
+                    250k                                                                $3
+
+                    500k                                                                $5
+
+                    1M                                                                  $10
+
+                    2M+                                                                 $20
+
+• Bonuses: YouTube Shorts views only; highest tier only, no stacking; only when your approved pack was
+  used. A different idea, different clips, or a completely different order may void the bonus.
+• Pay period: work approved between payment dates is paid on the next one. Payment date: the first
+  Sunday after the 15th of each month; bonuses paid on the next date after they're confirmed.
+• Reviewed on quality, speed, consistency, usability of packs, and account performance.
+
+Appendix B — Essential football terms
+Learn these first. Skills: nutmeg, elastico, step-over, La Croqueta, roulette, Cruyff turn. Shots: trivela,
+rabona, knuckleball, chip, Panenka, bicycle kick. Passing: through ball, killer pass, no-look pass, reverse
+pass, line-breaking pass. Movement: overlap, underlap, run in behind, blindside run, decoy run. Tactics:
+counterattack, high press, low block, counter-press, overload, half-space. Positions: Number 6, Number 8,
+Number 10, false 9, winger, wing-back. Script vocabulary: worldie, screamer, clinical, cooked, sent,
+pocketed, silky, outrageous, unplayable.
+Skill moves              Nutmeg, elastico, step-over, La Croqueta, roulette, Cruyff turn, heel-to-heel, rainbow flick, fake
+                         shot, body feint, drag-back, ball roll
+Shooting                 Trivela, rabona, knuckleball, finesse shot, power shot, chip, dink, Panenka, volley, half-volley,
+                         bicycle kick, backheel
+Finishing                Clinical finish, first-time finish, tap-in, near-post / far-post finish, round the keeper, slot it home,
+                         bury it
+Goal descriptions        Screamer, worldie, banger, thunderbolt, wondergoal, solo goal, late winner
+Passing                  Through ball, killer pass, no-look pass, reverse pass, trivela pass, one-two, layoff, switch of
+                         play, line-breaking pass, weighted pass
+Crossing                 Whipped, driven, floated, low, cut-back, early, back-post cross
+First touch              First touch, cushion touch, chest control, trap, half-turn, take it in stride, kill the ball
+Heading                  Header, diving header, bullet header, glancing header, flick-on
+Goalkeeping              Save, reflex save, parry, smother, punch, claim, rush off the line, clean sheet
+Defending                Tackle, slide tackle, interception, block, clearance, jockey, press, mark, recovery tackle
+Defensive                Blunder, howler, ball-watching, lost his man, caught sleeping, overcommitted, caught in
+mistakes                 possession
+Attacking                Run in behind, overlap, underlap, blindside run, diagonal run, decoy run, late run, drop deep,
+movement                 attack the space
+Beating a                Take on, skip past, burst past, skin, cook, send, sit down, wrong-foot, leave for dead
+defender
+Pace                     Pace, acceleration, burst, sprint, change of pace, recovery speed
+Possession               Keep possession, build-up, recycle, progress the ball, carry the ball, control the tempo
+
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                                          Page 9
+Attacking tactics       Counterattack, transition, overload, isolation, combination play, link-up play, width, half-space,
+                        between the lines
+Defensive tactics       Low block, high press, counter-press, high line, offside trap, man marking, zonal marking,
+                        compactness
+Areas                   Half-space, channel, pocket, final third, Zone 14, six-yard box, edge of the box, near post, back
+                        post
+Set pieces              Free kick, corner, penalty, throw-in, short corner, inswinger, outswinger
+Free kicks              Knuckleball, curler, dipping, trivela, under-the-wall free kick
+Penalties               Panenka, stutter-step, send the keeper the wrong way, penalty shootout
+Fouls                   Tactical foul, professional foul, late challenge, handball, high boot, yellow card, red card
+Offside                 Offside, onside, offside trap, beat the offside trap, time the run
+Midfield roles          Number 6, Number 8, Number 10, box-to-box, defensive midfielder, deep-lying playmaker,
+                        playmaker, pivot
+Attacking roles         Striker, centre-forward, Number 9, false 9, target man, poacher, winger, inside forward
+Defensive roles         Centre-back, full-back, wing-back, ball-playing defender, sweeper, sweeper-keeper
+Physical play           50/50, aerial duel, shoulder-to-shoulder, shield the ball, outmuscle, hold off
+Flair                   Flair, showboating, tekkers, silky, filthy, audacious, outrageous
+Slang                   Megged, skinned, cooked, sent, pocketed, top bins, banger, worldie, bottled it
+Misses                  Sitter, open-goal miss, skied it, dragged wide, scuffed it, hit the post, hit the bar
+Match terms             Equaliser, winner, opener, comeback, clean sheet, added time, extra time
+Performance             Masterclass, unplayable, clinical, composed, dominant, ran the show, pocketed, disasterclass
+Technical               Close control, vision, composure, press resistance, scanning, ball progression, chance creation,
+                        final ball, weight of pass
+Stats                   Big chance, shot on target, assist, key pass, xG, xA, goal contribution, progressive pass,
+                        progressive carry
+
+
+
+
+LxthalFC Scriptwriter Handbook v3 — 10 Sept 2026                                                                   Page 10
+
