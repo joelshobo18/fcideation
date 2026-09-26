@@ -62,22 +62,31 @@ SHEETS = [
  "[!] LANE CAVEAT: the best video in this lane did 77,617 against your 89k median. Shoot it knowing "
  "there is no format precedent. The picks are strong; the lane is unproven.",
  [
- ("5","Andrea Pirlo at INTER MILAN","C",
-  "Before he was Pirlo he was an Inter player, in a role nobody worked out. Milan then moved him in "
-  "front of the back four and he became the best deep-lying playmaker alive.",
-  "Career record. Safe.",""),
- ("4","Arjen Robben at CHELSEA","C",
+ ("5","Andrea Pirlo at INTER MILAN","V",
+  "Before he was Pirlo he was an Inter player (1998–2001, loaned out to Reggina and Brescia), in a role "
+  "nobody worked out. Mazzone first dropped him deep at Brescia; Ancelotti made it permanent at Milan, "
+  "in front of the back four, and he became the best deep-lying playmaker alive.",
+  "Wikipedia — Andrea Pirlo (Inter 1998, Milan from 30 June 2001; Pirlo on Ancelotti: “He changed my "
+  "career, putting me in front of the defence”).",
+  "Credit Ancelotti for the Milan role; Mazzone had the idea first — do not say Milan invented it."),
+ ("4","Arjen Robben at CHELSEA","V",
   "Three seasons at Stamford Bridge, 2004–07, TWO Premier League titles — before Madrid, before Bayern.",
-  "Career record. Safe. 1,889 likes on a comment asking for it.",
+  "Wikipedia — Arjen Robben (PL titles 2004-05 and 2005-06, Chelsea's first back-to-back). 1,889 likes on a comment asking for it.",
   "You dropped this in a revision once; it was restored. Keep it."),
- ("3","Kevin De Bruyne at CHELSEA","C",
-  "Mourinho told him he was SIXTH CHOICE. De Bruyne says they spoke twice in total. Sold to Wolfsburg, "
-  "came back to City, became the best midfielder in the league.",
-  "De Bruyne has told this himself in interviews — worth pulling the exact quote.",""),
- ("2","Thierry Henry at JUVENTUS","C",
-  "Signed 1999, played out of position on the WING, gone in half a season. Arsenal bought him for "
-  "less than Juventus had paid.",
-  "Career record. The fee comparison is the bit to check.",""),
+ ("3","Kevin De Bruyne at CHELSEA","V",
+  "Mourinho told him he was SIXTH CHOICE — “if Mata leaves, then you will be the fifth choice instead "
+  "of sixth.” De Bruyne: “I only talked with him twice.” Sold to Wolfsburg (Jan 2014, £18m), came back "
+  "to City (Aug 2015, about £55m), became the best midfielder in the league.",
+  "SKY SPORTS: “I only spoke twice with Jose Mourinho at Chelsea, says Kevin De Bruyne” · GOAL: "
+  "“Mourinho told me I was sixth choice at Chelsea”.",
+  "Both quotes are his own words — read them, do not paraphrase."),
+ ("2","Thierry Henry at JUVENTUS","V",
+  "Signed January 1999, played out of position on the WING (3 goals in 16), gone in half a season — "
+  "to Arsenal on 3 August 1999 for about £11m, roughly what Juventus had paid Monaco (£10.5m) seven "
+  "months earlier.",
+  "Wikipedia — Thierry Henry (Juventus £10.5m; Arsenal “an estimated fee of £11 million”).",
+  "[!] CORRECTED 26 Sep: the old line “Arsenal bought him for LESS than Juventus paid” is FALSE — "
+  "Arsenal paid slightly MORE. Say “about the same”, never “less”."),
  ("1","Frank Lampard at MANCHESTER CITY","V",
   "He scored against Chelsea, on loan, and REFUSED TO CELEBRATE — stood dead still with his arms up. "
   "It denied Chelsea the win.",
@@ -91,19 +100,24 @@ SHEETS = [
  "format did 200,711 off an 18,400-sub channel, and NBA 91.7k. The concept travels; the football "
  "execution has not. Arguably your opening.",
  [
- ("5","David Beckham, 1998","C","Sent off v Argentina; an effigy was hung outside a pub. He did not concede the goals.",
-  "Widely documented.",""),
- ("4","Bukayo Saka, Euro 2020","C",
+ ("5","David Beckham, 1998","V","Sent off v Argentina; an effigy was hung outside a pub. He did not concede the goals.",
+  "Yahoo Sports: “an effigy of Beckham was hung outside of a pub in London.” One written source found.",""),
+ ("4","Bukayo Saka, Euro 2020","V",
   "Nineteen years old, fifth penalty, racially abused for a shootout he was sent up LAST to take.",
-  "Widely documented.",
+  "Wikipedia — UEFA Euro 2020 final (“Saka took England's fifth penalty… Donnarumma dived to his left "
+  "and saved it”); born 5 Sep 2001, so nineteen. Order: Kane, Maguire, Rashford, Sancho, Saka.",
   "[!] Handle with care on camera. The abuse is the point, not the miss."),
- ("3","John Terry, 2008 final","C",
-  "Slipped on a waterlogged spot. Anelka still had to score after him and did not.",
-  "Match record.",""),
- ("2","Roberto Baggio, 1994","C",
+ ("3","John Terry, 2008 final","V",
+  "Slipped planting his standing foot on a waterlogged spot; the kick that would have won it hit the "
+  "OUTSIDE of the post and went wide. Anelka still had to score after him, in sudden death, and "
+  "Van der Sar saved it.",
+  "Wikipedia — 2008 UEFA Champions League final (“lost his footing… struck the outside of the right post and went wide”).",
+  "Say “hit the post” only with “outside” — it did not come back off the woodwork."),
+ ("2","Roberto Baggio, 1994","V",
   "Dragged Italy to the final almost single-handedly, missed one penalty, and that is all anyone "
   "remembers.",
-  "Match record.",""),
+  "Wikipedia — Roberto Baggio / 1994 World Cup final: five goals, all in the knockouts (two v Nigeria, "
+  "one v Spain, two v Bulgaria); took Italy's fifth and last kick and put it over the bar.",""),
  ("1","Loris Karius, 2018 final","V",
   "CONCUSSED by Ramos's elbow — diagnosed days later by a Boston hospital — and blamed for a decade.",
   "The concussion diagnosis is on the record and is what makes this the finisher.",
