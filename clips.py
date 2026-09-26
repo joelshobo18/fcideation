@@ -78,7 +78,7 @@ CLIPS = [
    "Mask the betting graphics bottom left throughout"),
   ("1","Eze v PSG — the CL final shootout","ygcv9fQheII","ARSENAL'S OWN OFFICIAL CHANNEL","01:22–01:27",
    "01:23 run-up · 01:25 strike · 01:26–01:27 EZE 10 legible on his back",
-   "[!!] OUTCOME DISPUTED — see the note under this table. Shootout starts 01:12"),
+   "Wide left (UEFA, Arsenal.com, Opta, Wikipedia; resolved 26 Sep). Shootout starts 01:12"),
  ]),
  ("When Goalkeepers Make Accidental Saves", [
   ("5","Full Reverse Save","ZbunM6UKwts","the reference itself, its #6 entry","—",

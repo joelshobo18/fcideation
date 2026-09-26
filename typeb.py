@@ -25,8 +25,9 @@ SHEETS = [
   "The spelling on screen is a visual gag on its own."),
  ("2","Thierry Henry","C",
   "He says it differently depending on which language he is speaking — the man himself gives two answers.",
-  "49 likes in your comments. NOT independently sourced.",
-  "[!] Find the clip of him saying it both ways before you assert this."),
+  "49 likes in your comments. NOT independently sourced — a web search on 26 Sep found NO written "
+  "source where Henry says or discusses this.",
+  "[!] Show footage of him saying it both ways, or drop the claim and just give the French pronunciation."),
  ("1","Mesut Özil — and there are TWO right answers","V",
   "Not “Ozzil”. German is “MAY-zoot UR-zil”, IPA [ˈmeːzut ˈøːzil]. Turkish is “meh-SOOT ur-ZEEL”, "
   "IPA [meˈsut œˈzil] — different stress in BOTH words. Born in Germany to a Turkish family, so both "
@@ -38,19 +39,29 @@ SHEETS = [
 ("Players Who Could've Played For Another Nation", "PLAYER-NAME FAMILY", "locked",
  "Your edge here is that you EXPLAIN the link rather than just naming it.",
  [
- ("5","Bukayo Saka — NIGERIA","C",
-  "Both parents Nigerian. Nigeria said publicly they would take him but would not beg for him.",
-  "Press reports. Worth one check before the quote goes on camera.",""),
- ("4","Michael Olise — ENGLAND","C",
-  "Eligible for FOUR nations. Southgate personally tried to turn him in 2022.",
-  "Press reports. The four-nation claim is the one to verify precisely.",
-  "[!] Name the four on screen or do not use the number."),
- ("3","Alphonso Davies — LIBERIA","C",
-  "Born in the Buduburam refugee camp in Ghana to Liberian parents; chose Canada.",
-  "Widely reported. The camp name is specific enough to check.",""),
- ("2","Kylian Mbappé — ALGERIA","C",
-  "Mother Algerian, father Cameroonian. 41 likes across four comments asked for this.",
-  "Your comments. The reference used him for CAMEROON, so say Algeria and you are not re-cutting.",""),
+ ("5","Bukayo Saka — NIGERIA","V",
+  "Both parents Nigerian. The Nigerian FA's president, Amaju Pinnick, said publicly in July 2020: "
+  "“We won't beg people to play for Nigeria.”",
+  "DAILY TRUST: “NFF won't beg Bukayo Saka to play for Nigeria — Pinnick” (Instagram Live, July 2020).",
+  "Attribute the quote to Pinnick by name."),
+ ("4","Michael Olise — ENGLAND","V",
+  "Eligible for FOUR nations — ENGLAND, FRANCE, NIGERIA, ALGERIA (British-Nigerian father, Franco-Algerian "
+  "mother). England, Algeria and Nigeria all approached him; he chose France. Southgate reportedly tried "
+  "to turn him in 2022.",
+  "Wikipedia — Michael Olise (“Eligible to represent four countries… approached by the football federations "
+  "of England, Algeria, and Nigeria”) · SportBible citing the Daily Mail for the 2022 Southgate approach.",
+  "Name the four on screen. Say “reportedly” for Southgate — it is second-hand."),
+ ("3","Alphonso Davies — LIBERIA","V",
+  "Born in the Buduburam refugee camp in Ghana to Liberian parents who had fled the civil war; moved "
+  "to Edmonton at five and chose Canada.",
+  "BUNDESLIGA.COM: “The story began in Buduburam, a Ghanaian refugee camp, where Davies was born after "
+  "his parents had fled the civil war in Liberia.”",""),
+ ("2","Kylian Mbappé — ALGERIA","V",
+  "Mother Algerian (Fayza Lamari, of Algerian Kabyle origin), father Cameroonian (Wilfrid Mbappé). "
+  "41 likes across four comments asked for this.",
+  "Wikipedia — Kylian Mbappé (parents' origins). The reference used him for CAMEROON, so say Algeria and you are not re-cutting.",
+  "Parents are verified; no federation statement on eligibility was found — say “his mother is Algerian”, "
+  "not “Algeria tried to call him up”."),
  ("1","Lionel Messi — SPAIN","V",
   "Pékerman has said the paperwork was prepared to cap him for Argentina's U-20s precisely BECAUSE "
   "Spain were circling. Messi has said it never crossed his mind.",
@@ -129,9 +140,16 @@ SHEETS = [
  "(Torres was ~£50m) and 2 BALLON D'ORS at 1:18 (Ronaldinho won one, 2005). A re-voice will not fix "
  "them — correcting yourself on camera is the strongest hook this redo has.",
  [
- ("5","João Félix","C","Most expensive teenager ever, Saudi league at 26.","2,800 likes.",""),
- ("4","Dele Alli","C","Two PFA Young Player awards, then out of football.","2,357 likes.",""),
- ("3","Andrey Arshavin","C","Four goals at Anfield in one night, then gone.","1,365 likes.",""),
+ ("5","João Félix","V","SECOND-most expensive teenager ever — €126m to Atlético at 19 (only Mbappé cost more) — "
+  "and in the Saudi league (Al-Nassr, 29 July 2025) at 25.",
+  "RTÉ: Atlético sign 19-year-old Félix for €126m · footballtransfers.com: Mbappé first, Félix second. 2,800 likes.",
+  "[!] CORRECTED 26 Sep: NOT “most expensive teenager ever” and NOT “at 26” — both were wrong."),
+ ("4","Dele Alli","V","Two PFA Young Player awards (2016, 2017). Como released him by mutual consent in 2025 after "
+  "one appearance; still without a club in September 2026.",
+  "Fox Sports: PFA Young Player “for second year running” · GiveMeSport (Sep 2026): training at Barnet, no club. 2,357 likes.",
+  "[!] Say “without a club” — NOT “retired” or “out of football for good”; he is trying to return."),
+ ("3","Andrey Arshavin","V","Four goals at Anfield in one night — Liverpool 4-4 Arsenal, 21 April 2009 — then gone.",
+  "ARSENAL.COM: “scored four goals against Liverpool at Anfield in a pulsating 4-4 draw”. 1,365 likes.",""),
  ("2","Michu","V","One season: EIGHTEEN in the Premier League, TWENTY-TWO in all competitions (2012-13), then an "
   "ankle that never recovered. Retired 25 July 2017 aged 31 over the right ankle.",
   "Wikipedia — Michu (statistics table: 18 PL / 22 all comps; retirement date and reason quoted). 167 likes on the comment.",
@@ -149,10 +167,11 @@ SHEETS = [
  "SETTLED: shooting as the top-5 as built. Each pick is a one-line fact, not a saga — which is why "
  "the countdown works and the reference's single-story shape does not apply.",
  [
- ("5","Ronaldinho → Manchester United, 2003","C",
+ ("5","Ronaldinho → Manchester United, 2003","V",
   "He has said he was 48 HOURS from signing. United had just sold Beckham. He went to Barcelona and "
   "won the Ballon d'Or two years later.",
-  "Ronaldinho has told this himself.",""),
+  "His own words (talkSPORT, via TEAMtalk, Mar 2018): “It was a matter of 48 hours but Sandro Rosell had told me way before…”",
+  "Attribute the number to him: “he says 48 hours”."),
  ("4","Lewandowski → Blackburn Rovers, 2010","V",
   "An ACT OF GOD stopped it — the Icelandic volcanic ash cloud grounded his flight to England.",
   "SKY SPORTS has it twice, and Lewandowski confirmed it in his own words: “Volcano stopped me from "
@@ -163,14 +182,17 @@ SHEETS = [
   "move. Neymar has separately said he nearly chose Bayern because of Guardiola.",
   "GOAL: “Neymar passed a medical with Madrid — Madrid president Pérez”.",
   "Replaced Neymar→Man City, which was the weakest-sourced of the three versions."),
- ("2","Fekir → Liverpool, 2018","C",
-  "So far gone he had ALREADY DONE THE CLUB INTERVIEWS in a Liverpool shirt. Collapsed at the medical "
-  "over a knee. He has since accused Liverpool of making excuses.",
-  "Widely reported; the interview footage exists.",""),
- ("1","De Gea → Real Madrid, 2015","C",
-  "Deadline day. The move died because THE PAPERWORK WAS NOT SUBMITTED IN TIME — the infamous fax. "
-  "He stayed at United eight more years.",
-  "Widely reported.",
+ ("2","Fekir → Liverpool, 2018","V",
+  "So far gone he had ALREADY DONE THE CLUB INTERVIEWS with Liverpool's media team. It collapsed after "
+  "his medical, reportedly over a knee. He has since said the knee was “an excuse”.",
+  "SI (Jun 2018): “had even conducted interviews with the club's media team” · SKY SPORTS (Sep 2019): "
+  "“At one point, they wanted me to believe it was the knee. But it was an excuse.”",
+  "Liverpool never gave a reason publicly — say “reportedly” for the knee."),
+ ("1","De Gea → Real Madrid, 2015","V",
+  "Deadline day, 31 August 2015. The move died because THE PAPERWORK REACHED LA LIGA MINUTES AFTER "
+  "MIDNIGHT — and each club blamed the other. He stayed at United eight more seasons.",
+  "SKY SPORTS: paperwork “came in at one minute past midnight in Spain” · Real Madrid statement (SI): "
+  "contracts received “at 12:02 a.m., after the TMS was closed”.",
   "The strongest single story and the most famous. Lead the video on it if you ever split this pack."),
  ]),
 

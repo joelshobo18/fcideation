@@ -268,6 +268,25 @@ def check_deliverables():
                     f"{p['id']} #{rank} ships as a placeholder in the PDF line-up: {name[:40]}")
             else: rec("pass","","")
 
+def check_manifest():
+    # E25: clips.py changed but the shipped CSV was not regenerated. Compare row by row.
+    import csv
+    path = f"{LX}/LxthalFC-CLIP-MANIFEST.csv"
+    if not os.path.exists(path):
+        rec("warn", "manifest-missing", "LxthalFC-CLIP-MANIFEST.csv not found", "E21"); return
+    try:
+        sys.path.insert(0, LX); import clips
+        want = [[r["pack"], r["rank"], r["pick"], r["source"], r["video_id"], r["url"],
+                 r["window"], r["cut"], r["note"]] for r in clips.rows()]
+        have = list(csv.reader(io.open(path, encoding="utf-8-sig", newline="")))[1:]
+    except Exception as e:
+        rec("warn", "manifest-unreadable", str(e)); return
+    stale = [w[2] for w, h in zip(want, have) if w != h]
+    if len(want) != len(have) or stale:
+        rec("fail", "manifest-stale",
+            f"CSV differs from clips.py ({len(have)} vs {len(want)} rows; changed: {stale[:3]}) — regenerate it", "E25")
+    else: rec("pass","","")
+
 def report(as_json=False):
     if as_json:
         print(json.dumps(R, indent=1)); return 1 if R["fail"] else 0
@@ -300,4 +319,5 @@ if __name__ == "__main__":
     check_typeb()
     check_consistency(packs)
     check_deliverables()
+    check_manifest()
     sys.exit(report(as_json))

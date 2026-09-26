@@ -401,7 +401,7 @@ READY += [
  "status":"READY",
  "meta":"Your Pt1 2,210,074 · Pt1 labels: Powershot · Sidefoot · Pass · Panenka · Stutter · SETTLED: Budimir replaces Tah",
  "verdict":"All five described. Budimir is in at #2 (your call, B) and Pires & Henry are kept at #4 (your call). "
-  "Eze's OUTCOME is disputed between the written record and the footage — say ‘he missed’, which nobody contests.",
+  "Eze's outcome is RESOLVED (26 Sep): wide left, per UEFA, Arsenal.com, Opta and Wikipedia — five different endings, no duplicate.",
  "picks":[
   ("5","Zaza — STUTTER — Euro 2016 shootout",
    "The most famous run-up in football.",
@@ -466,20 +466,13 @@ READY += [
    "touchline hands in pockets, then sits slumped with his chin on his fist — that is your closing frame. "
    "COMMENTARY (Serbian): “Nije ni šutnuo!” — “He didn't even take a shot!” "
    "OVERLAY: mask the rotating betting graphics bottom left throughout."),
-  ("1","Eze — SIDEFOOT — missed, and the exact destination is DISPUTED",
-   "Not the crossbar. Beyond that, the record and the footage disagree.",
+  ("1","Eze — SIDEFOOT — dragged it WIDE LEFT",
+   "Not the crossbar, not over the bar: wide of the left post.",
    ["ygcv9fQheII — ARSENAL'S OWN OFFICIAL CHANNEL, 01:22–01:27 (shootout starts 01:12)"],
-   "[!!] TWO vision passes said ‘underside of the crossbar’ and both were wrong: no source has him touching "
-   "the frame. Beyond that the sources SPLIT. Wikipedia's match record says he SHOT WIDE LEFT. THREE vision "
-   "passes on Arsenal's own footage say OVER THE BAR. TNT's live commentary says only that he ‘missed’. Both "
-   "readings agree he went LEFT and missed the target; they disagree on bar or post. I am not settling it. "
-   "SAFE SCRIPT WORDING: “he missed” — nobody contests that. Do NOT say crossbar, and do not say ‘wide left’ "
-   "or ‘over the bar’ as fact. "
+   "[!!] RESOLVED 26 Sep: WIDE LEFT. Four written records agree — UEFA.com ‘swept wide’, Arsenal.com ‘dragged his effort wide of the target’, PSG's Opta commentary ‘misses to the left’, Wikipedia ‘shot wide left’. None says over the bar; that was Gabriel. The vision passes were wrong twice (crossbar, then over). SAFE SCRIPT WORDING: “he dragged it wide” — ‘wide left’ is also fine. Do NOT say crossbar or over the bar. "
    "THE TECHNIQUE IS YOUR CALL AND IT STANDS: side-foot. No source anywhere has a slow-motion replay of the "
    "contact, so the footage cannot overrule you. "
-   "KNOCK-ON TO CHECK IF IT WAS OVER THE BAR: Zaza (#5) also ends over the bar, and that would be the same "
-   "duplicated mechanism removing Tah was meant to fix. If you can confirm from a full replay, tell me and I "
-   "will re-check variety. "
+   "VARIETY CONFIRMED: Zaza (#5) goes over, Eze goes wide — five different endings, no duplicate. "
    "SCOREBUG: PENALTIES / PSG 2 / ARS 1. “EZE” above 10, “VISIT RWANDA” on the lower back. "
    "COMMENTARY: “Eberechi Eze...” then “...misses!” "
    "ONE SCRIPT CHANGE: stop saying crossbar."),
@@ -491,7 +484,7 @@ READY += [
  "decision":"SETTLED, both of them. #4: you said keep Pires & Henry. #2: you said B — keep Budimir, so Powershot "
   "goes uncovered and Tah drops to subs. Nothing on this pack is waiting on you.",
  "quote":"THE FULL SHOOTOUT, from the written record — use this and not any vision read: "
-  "Gonçalo Ramos scored · GYÖKERES scored · Doué scored · EZE MISSED (record: wide left; footage: over the bar — disputed) · Nuno Mendes SAVED by Raya · "
+  "Gonçalo Ramos scored · GYÖKERES scored · Doué scored · EZE MISSED — WIDE LEFT · Nuno Mendes SAVED by Raya · "
   "Rice scored · Hakimi scored · Martinelli scored · Beraldo scored · GABRIEL OVER THE BAR. PSG win 4-3.",
 },
 {
@@ -567,8 +560,8 @@ READY += [
  "meta":"Your Pt1 1,967,544 · 2,230 comments · reference 9aYJ3lBf7HY is your own Part 1",
  "verdict":"Zero overlap with Part 1, and Part 1 contains two factual errors you can correct on camera.",
  "picks":[
-  ("5","João Félix","2,800 likes — most expensive teenager ever, Saudi league at 26.",[],""),
-  ("4","Dele Alli","2,357 — two PFA Young Player awards, then out of football.",[],""),
+  ("5","João Félix","2,800 likes — second-most expensive teenager ever (€126m, only Mbappé cost more), Saudi league at 25.",[],""),
+  ("4","Dele Alli","2,357 — two PFA Young Player awards, now without a club and still trying to get back.",[],""),
   ("3","Andrey Arshavin","1,365 — four goals at Anfield, then gone.",[],""),
   ("2","Michu","One season: eighteen in the Premier League, twenty-two in all competitions, then an ankle that never recovered.",
    ["Wikipedia — Michu: 22 in all competitions in 2012–13, 18 in the league; retired 25 July 2017 aged 31 over the right ankle"],""),
@@ -720,12 +713,12 @@ DECISIONS = [
   "carry a transfer saga. THAT REASONING WAS WRONG AND THE ERROR WAS MINE: I was importing the "
   "REFERENCE's story onto YOUR picks. The reference needs sixty-nine seconds because it is one story "
   "with a reversal \u2014 Moyes flies to Munich, sits on the couch, gets sacked three months later. Your "
-  "five are not stories, they are one-line facts. A volcano grounded the flight. The fax never sent. "
+  "five are not stories, they are one-line facts. A volcano grounded the flight. The paperwork landed minutes late. "
   "He had already done the club interviews. P\u00e9rez says he passed a medical. Forty-eight hours from "
   "signing. Each of those lands in twelve seconds. And switching format would not have fixed the "
   "proof problem regardless \u2014 a single-story 70-second video is equally unproven on your channel, so "
   "it would have traded a format your audience knows for one they do not, on someone else's "
-  "reference. Ship the top-5; expanding De Gea and the fax later is a cheap follow-up if it lands."),
+  "reference. Ship the top-5; expanding De Gea's deadline later is a cheap follow-up if it lands."),
 ]
 
 
@@ -784,7 +777,7 @@ VERIFIED = [
    "ESPN · espn.com/soccer/match/_/gameId/760489/paraguay-germany"]),
  ("The Champions League final shootout",
   "PSG 1-1 Arsenal, 30 May 2026, PSG retain on penalties 4-3. Havertz 6', Dembélé pen 61'. "
-  "EZE MISSED — the written record says wide left, three footage passes say over the bar; DISPUTED, say ‘missed’. "
+  "EZE MISSED, WIDE LEFT — UEFA.com, Arsenal.com, PSG/Opta and Wikipedia agree (resolved 26 Sep; the footage passes that said over the bar were wrong). "
   "GABRIEL PUT HIS OVER THE BAR. Raya saved from Nuno Mendes.",
   ["Wikipedia · 2026 UEFA Champions League final",
    "UEFA · uefa.com — Paris retain Champions League"]),

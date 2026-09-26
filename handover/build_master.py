@@ -335,15 +335,11 @@ for _pack, _cl in _CLIPS:
         ("BACKGROUND",(0,0),(-1,0),SURF)]))
     F.append(_t)
 F.append(Spacer(1,8))
-F.append(box("[!!] ONE OUTCOME IS DISPUTED AND YOU SHOULD NOT STATE IT ON CAMERA. Eze's penalty: "
- "Wikipedia's account of the shootout says he SHOT WIDE LEFT. THREE separate vision passes on "
- "Arsenal's own footage say it went OVER THE BAR. Both agree it went LEFT and that he missed; they "
- "disagree on whether it cleared the bar or passed the post. TNT Sports' live commentary says only "
- "that he \u201cmissed his side's second effort\u201d and does not settle it. My earlier note in this "
- "document stated WIDE LEFT as settled fact \u2014 that was over-confident and this corrects it. "
- "SAY \u201che missed\u201d, which is uncontested, and do not name the destination. "
- "[!] AND IF IT IS OVER THE BAR, THE PACK HAS A VARIETY PROBLEM: Zaza at #5 also ends over the bar, "
- "which is the exact duplicate-mechanism issue that removing Tah was meant to fix.",
+F.append(box("RESOLVED 26 SEP: EZE WENT WIDE LEFT. The dispute recorded on 21\u201322 Sep is closed. "
+ "Four written records agree \u2014 UEFA.com (\u201cswept wide\u201d), Arsenal.com (\u201cdragged his effort wide of the target\u201d), "
+ "PSG's Opta commentary (\u201cmisses to the left\u201d) and Wikipedia (\u201cshot wide left\u201d). None says over the bar; the only "
+ "Arsenal kick that went over was Gabriel's. The three vision passes were wrong. SAY \u201che dragged it wide\u201d. "
+ "And the variety problem is gone: Zaza goes over, Eze goes wide \u2014 five different endings.",
  S["warn"],REDBG,RED))
 F.append(Spacer(1,10))
 

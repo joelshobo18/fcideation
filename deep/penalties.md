@@ -106,7 +106,7 @@ COMMENTARY (German), verbatim: "Und so gab's die Gelegenheit für Agüero in der
  ("Agüero… very cheeky… and straight into Mendy's arms!")
 
 ════════════════════════════════════════════════════════════════════════
-#1 EZE — SIDEFOOT, MISSED — DESTINATION DISPUTED. SOURCE: ygcv9fQheII (ARSENAL'S OWN OFFICIAL CHANNEL).
+#1 EZE — SIDEFOOT, MISSED — WIDE LEFT [RESOLVED 26 Sep 2026]. SOURCE: ygcv9fQheII (ARSENAL'S OWN OFFICIAL CHANNEL).
 
 *** RESOLVED THREE WAYS, AND ONE OF THEM CHANGES THE ENTRY. ***
 
@@ -118,7 +118,11 @@ COMMENTARY (German), verbatim: "Und so gab's die Gelegenheit für Agüero in der
    Havertz scored on 6 minutes, Dembélé equalised from the spot on 61. Reported by UEFA, ESPN, Al Jazeera,
    Yahoo and Olympics.com.
 
-[!!] *** 3. THE BALL DID NOT HIT THE CROSSBAR. WHERE IT WENT INSTEAD IS DISPUTED. ***
+[!!] *** 3. THE BALL DID NOT HIT THE CROSSBAR. IT WENT WIDE LEFT. [RESOLVED 26 Sep 2026] ***
+   RESOLVED: four independent written records now agree — UEFA.com (“Eberechi Eze swept wide”), Arsenal.com (“Eze dragged his effort wide of the target”), PSG.fr Opta commentary (“misses to the left”), Wikipedia (“shot wide left”). No written source says over the bar;
+   the only Arsenal kick that went over was GABRIEL's. The three vision passes were wrong on destination, as
+   two of them were already wrong on the crossbar. Law 2 applied as written: text wins on what happened.
+   SCRIPT WORDING: “he dragged it wide” (or “wide left”). The history of the dispute follows for the record.
    TWO separate vision passes both told me "underside of the crossbar, rebounded down and out". No source
    has him touching the frame, so that is dead. Beyond that the sources SPLIT [E20, 21 Sep]: Wikipedia's
    match record says he SHOT WIDE LEFT; a THIRD vision pass on Arsenal's own footage (run for the clip
@@ -132,7 +136,7 @@ THE ACTUAL SHOOTOUT, from the match record — use this, not any vision read:
    1  Gonçalo Ramos (PSG)      SCORED
    2  Viktor Gyökeres (ARS)    SCORED      [a vision read called this Ødegaard — wrong]
    3  Désiré Doué (PSG)        SCORED
-   4  EBERECHI EZE (ARS)       MISSED — record says wide left; footage says over the bar (DISPUTED)
+   4  EBERECHI EZE (ARS)       MISSED — WIDE LEFT (UEFA, Arsenal.com, Opta, Wikipedia)
    5  Nuno Mendes (PSG)        SAVED by DAVID RAYA
    6  Declan Rice (ARS)        SCORED
    7  Achraf Hakimi (PSG)      SCORED
@@ -144,11 +148,11 @@ THE ACTUAL SHOOTOUT, from the match record — use this, not any vision read:
 *** WHY THE PICK SURVIVES, AND IS ACTUALLY BETTER FOR THIS ***
  You ruled the technique is a SIDE-FOOT and that stands — you watched it, and no source anywhere has a
  slow-motion replay of the contact, so the footage cannot overrule you.
- And the correction helps the variety IF the record is right. Zaza (#5) blazes it OVER THE BAR. If Eze went
+ And the correction helps the variety — and the record IS right (26 Sep). Zaza (#5) blazes it OVER THE BAR. If Eze went
  wide of the post the five end five different ways: never moves · caught standing still · rolled along the
  floor · wide of the post · into the crowd. [!] If Eze ALSO went over the bar, he and Zaza share an ending —
- the duplicate-mechanism problem that removing Tah was meant to fix. That is why the dispute is not
- cosmetic; it is flagged in the pack sheet and the manifest.
+ the duplicate-mechanism problem that removing Tah was meant to fix. That was why the dispute was not
+ cosmetic. [RESOLVED 26 Sep 2026: WIDE LEFT — the five end five different ways; no duplicate.]
  ONE CHANGE TO THE SCRIPT: stop saying crossbar. He side-foots it and misses the target entirely.
  [!] And keep GABRIEL as a sub, not a pick — he goes over the bar for certain, which duplicates Zaza.
 

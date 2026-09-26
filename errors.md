@@ -249,3 +249,30 @@ FIX: data.py #2 → Budimir; Eze → DISPUTED with the safe wording; warn line �
  resolved; final_packs.json is now regenerated from the app by handover/hx/regen_packs.mjs; the PDF's
  Part Six now prints the live QA gate so warnings are acknowledged inside the send-off.
 STAGE: 7 (assemble), 9.5 (QA)
+
+### E25 — Four of nineteen comment-sourced facts were wrong, and "DISPUTED" sat on a closable question for five days
+WHAT: Verifying the 19 C (FROM COMMENTS) Type B picks on 26 Sep found four lines that would have been
+ spoken wrong: Henry/Juventus "Arsenal bought him for LESS than Juventus paid" (false — ~£11m vs £10.5m,
+ Arsenal paid slightly more); Félix "most expensive teenager ever" (second, behind Mbappé) and "Saudi
+ league at 26" (25); Dele "out of football" (a free agent trying to return, not retired); De Gea "the
+ infamous fax" (the record says paperwork reached La Liga minutes after midnight, each club blaming the
+ other). Separately, Eze's penalty had been left DISPUTED since 21 Sep on one text source vs three vision
+ passes; a proper search found UEFA.com, Arsenal.com, PSG's Opta commentary and Wikipedia all saying WIDE
+ (two say left), none over the bar — the vision passes were wrong. The clip-manifest CSV also went stale
+ when clips.py changed, and nothing checked it.
+WHY: C picks were shipped with an INFO line on the theory that comment-sourced facts are "probably right".
+ Superlatives, comparisons and ages are exactly where memory and comments drift. On Eze, "DISPUTED" was
+ treated as an end state instead of a to-do: the source search that closes it took one agent two minutes.
+RULE: A C marker is a queue, not a status — clear it before the batch ships. Superlatives ("most", "first",
+ "ever"), comparisons ("less than", "more than") and ages are verified FIRST. A DISPUTED outcome gets a
+ multi-source search (governing body, both clubs, Opta/match centre, a major outlet) before it is allowed
+ to stay disputed. Any derived file (CSV, JSON, PDF) is regenerated in the same step as its source.
+FIX: 18 of 19 C picks flipped to V with written sources (typeb.py 43 V / 1 C / 1 unmarked — Henry's
+ "two pronunciations" has no written source and stays C with a "show footage or drop it" note; the
+ unmarked row is swap-nations #1, an argument rather than a fact). Corrections propagated to typeb.py, data.py,
+ notes-app.html, final_packs.json (regenerated), refaudit untouched (historical reasoning). Eze RESOLVED
+ WIDE LEFT across deep/penalties.md, data.py, clips.py, the CSV, build_master.py and the app. New QA check
+ `manifest-stale` compares LxthalFC-CLIP-MANIFEST.csv row by row with clips.py and FAILS on drift — proven
+ to fire on the pre-fix CSV.
+STAGE: 5 (verify), 7 (assemble), 9.5 (QA). Pattern 1 (background knowledge under the claim) — and a
+ sixth, now named: 6. "Flagged" is not "done" — a C marker or a DISPUTED label is a queue to clear, not a state to ship.
